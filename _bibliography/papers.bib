@@ -1,0 +1,248 @@
+@InProceedings{jmz24pscc,
+  title={Oscillations-Aware Frequency Security Assessment via Efficient Worst-Case Frequency Nadir Computation},
+  author={Jiang, Yan and Min, Hancheng and Zhang, Baosen},
+  booktitle = {Power Systems Computation Conference},
+  abstract = {Frequency security assessment following major disturbances has long been one of the central tasks in power system operations. The standard approach is to study the center of inertia frequency, an aggregate signal for an entire system, to avoid analyzing the frequency signal at individual buses. However, as the amount of low-inertia renewable resources in a grid increases, the center of inertia frequency is becoming too coarse to provide reliable frequency security assessment. In this paper, we propose an efficient algorithm to determine the worst-case frequency nadir across all buses for bounded power disturbances, as well as identify the power disturbances leading to that severest scenario. The proposed algorithm allows oscillation-aware frequency security assessment without conducting exhaustive simulations and intractable analysis.},
+  year = {2024},
+  month = {6},
+  page = {1-8},
+  note = {to appear},
+  pdf = {JMZ2023Preprint.pdf},
+  preview = {freq_osc.png},
+  selected = {false}
+}
+
+@InProceedings{mmv2024iclr,
+  title={Early Neuron Alignment in Two-layer ReLU Networks with Small Initialization},
+  author={Min, Hancheng and Mallada, Enrique and Vidal, Ren\'e},
+  year={2024},
+  abstract = {This paper studies the problem of training a two-layer ReLU network for binary classification using gradient flow with small initialization. We consider a training dataset with well-separated input vectors: Any pair of input data with the same label are positively correlated, and any pair with different labels are negatively correlated. Our analysis shows that, during the early phase of training, neurons in the first layer try to align with either the positive data or the negative data, depending on its corresponding weight on the second layer. A careful analysis of the neurons' directional dynamics allows us to provide an $\mathcal{O}(\frac{\log n}{\sqrt{\mu}})$ upper bound on the time it takes for all neurons to achieve good alignment with the input data, where $n$ is the number of data points and $\mu$ measures how well the data are separated. After the early alignment phase, the loss converges to zero at a $\mathcal{O}(\frac{1}{t})$ rate, and the weight matrix on the first layer is approximately low-rank. Numerical experiments on the MNIST dataset illustrate our theoretical findings.},
+  arxiv = {2307.12851},
+  pdf = {MMV2024ICLR.pdf},
+  preview = {dir_flow.gif},
+  month = {5},
+  pages = {1-8},
+  note = {to appear},
+  booktitle =    {International Conference on Learning Representations (ICLR)},
+  selected = {true}
+}
+
+
+@InProceedings{mvm2023icml,
+  title =    {On the Convergence of Gradient Flow on Multi-layer Linear Models},
+  author =       {Min, Hancheng and Vidal, Ren\'e and Mallada, Enrique},
+  booktitle =    {The 40th International Conference on Machine Learning (ICML)},
+  pages =    {24850--24887},
+  year =   {2023},
+  editor =   {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume =   {202},
+  series =   {Proceedings of Machine Learning Research},
+  month =    {7},
+  publisher =    {PMLR},
+  pdf =    {MVM2023ICML.pdf},
+  url =    {https://proceedings.mlr.press/v202/min23d.html},
+  abstract =   {In this paper, we analyze the convergence of gradient flow on a multi-layer linear model with a loss function of the form $f(W_1W_2\cdots W_L)$. We show that when $f$ satisfies the gradient dominance property, proper weight initialization leads to exponential convergence of the gradient flow to a global minimum of the loss. Moreover, the convergence rate depends on two trajectory-specific quantities that are controlled by the weight initialization: the imbalance matrices, which measure the difference between the weights of adjacent layers, and the least singular value of the weight product $W=W_1W_2\cdots W_L$. Our analysis exploits the fact that the gradient of the overparameterized loss can be written as the composition of the non-overparametrized gradient with a time-varying (weight-dependent) linear operator whose smallest eigenvalue controls the convergence rate. The key challenge we address is to derive a uniform lower bound for this time-varying eigenvalue that lead to improved rates for several multi-layer network models studied in the literature.},
+  preview = {lin_conv.png},
+  selected = {true}
+}
+
+
+@Article{min2023a,
+  author  = {Min, Hancheng and Pates, Richard and Mallada, Enrique},
+  journal = {Automatica},
+  abstract = {Network coherence generally refers to the emergence of simple aggregated dynamical behaviours, despite heterogeneity in the dynamics of the subsystems that constitute the network. In this paper, we develop a general frequency domain framework to analyze and quantify the level of network coherence that a system exhibits by relating coherence with a low-rank property of the system's input-output response. More precisely, for a networked system with linear dynamics and coupling, we show that, as the network's \emph{effective algebraic connectivity} grows, the system transfer matrix converges to a rank-one transfer matrix representing the coherent behavior. Interestingly, the non-zero eigenvalue of such a rank-one matrix is given by the harmonic mean of individual nodal dynamics, and we refer to it as the coherent dynamics. Our analysis unveils the frequency-dependent nature of coherence and a non-trivial interplay between dynamics and network topology. We further show that many networked systems can exhibit similar coherent behavior by establishing a concentration result in a setting with randomly chosen individual nodal dynamics.},
+  title   = {A Frequency Domain Analysis of Slow Coherency in Networked Systems},
+  year    = {2023},
+  note = {submitted, under revision},
+  arxiv = {2302.08438},
+  pdf = {MPM2023Preprint.pdf},
+  preview = {coherence.gif},
+  selected = {true}
+}
+
+
+
+@InProceedings{xu2023aistat,
+  title =    {Linear Convergence of Gradient Descent For Finite Width Over-parametrized Linear Networks With General Initialization},
+  author =       {Xu, Ziqing and Min, Hancheng and Tarmoun, Salma and Mallada, Enrique and Vidal, Rene},
+  booktitle =    {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages =    {2262--2284},
+  year =   {2023},
+  editor =   {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
+  volume =   {206},
+  series =   {Proceedings of Machine Learning Research},
+  month =    {4},
+  publisher =    {PMLR},
+  url =    {https://proceedings.mlr.press/v206/xu23c.html},
+  abstract =   {Recent theoretical analyses of the convergence of gradient descent (GD) to a global minimum for over-parametrized neural networks make strong assumptions on the step size (infinitesimal), the hidden-layer width (infinite), or the initialization (spectral, balanced). In this work, we relax these assumptions and derive a linear convergence rate for two-layer linear networks trained using GD on the squared loss in the case of finite step size, finite width and general initialization. Despite the generality of our analysis, our rate estimates are significantly tighter than those of prior work. Moreover, we provide a time-varying step size rule that monotonically improves the convergence rate as the loss function decreases to zero. Numerical experiments validate our findings.},
+  pdf = {XMTMV2023AISTATS.pdf},
+  preview = {loss_100.png},
+}
+
+
+
+@InProceedings{mm2023l4dc,
+  title =    {Learning Coherent Clusters in Weakly-Connected Network Systems},
+  author =       {Min, Hancheng and Mallada, Enrique},
+  booktitle =    {Proceedings of The 5th Annual Learning for Dynamics and Control Conference},
+  pages =    {1167--1179},
+  year =   {2023},
+  editor =   {Matni, Nikolai and Morari, Manfred and Pappas, George J.},
+  volume =   {211},
+  series =   {Proceedings of Machine Learning Research},
+  month =    {6},
+  publisher =    {PMLR},
+  url =    {https://proceedings.mlr.press/v211/min23a.html},
+  abstract =   {We propose a structure-preserving model-reduction methodology for large-scale dynamic networks with tightly-connected components. First, the coherent groups are identified by a spectral clustering algorithm on the graph Laplacian matrix that models the network feedback. Then, a reduced network is built, where each node represents the aggregate dynamics of each coherent group, and the reduced network captures the dynamic coupling between the groups. We provide an upper bound on the approximation error when the network graph is randomly generated from a weight stochastic block model. Finally, numerical experiments align with and validate our theoretical findings.},
+  arxiv = {2211.15301},
+  pdf = {MM2023L4DC.pdf},
+  preview = {inter_area.gif},
+  selected = {true}
+}
+
+
+
+@INPROCEEDINGS{mm2023acc,
+  author={Min, Hancheng and Mallada, Enrique},
+  booktitle={2023 American Control Conference (ACC)}, 
+  title={Spectral clustering and model reduction for weakly-connected coherent network systems}, 
+  year={2023},
+  abstract = {We propose a novel model-reduction methodology for large-scale dynamic networks with tightly-connected components. First, the coherent groups are identified by a spectral clustering algorithm on the graph Laplacian matrix that models the network feedback. Then, a reduced network is built, where each node represents the aggregate dynamics of each coherent group, and the reduced network captures the dynamic coupling between the groups. Our approach is theoretically justified under a random graph setting. Finally, numerical experiments align with and validate our theoretical findings.},
+  pages={2957-2962},
+  doi={10.23919/ACC55779.2023.10156212},
+  arxiv = {2209.13701},
+  pdf = {MM2023ACC.pdf},
+  preview = {net_red_two.png},
+}
+
+
+@InProceedings{mtvm2021icml,
+  title = 	 {On the Explicit Role of Initialization on the Convergence and Implicit Bias of Overparametrized Linear Networks},
+  author =       {Min, Hancheng and Tarmoun, Salma and Vidal, Ren\'e and Mallada, Enrique},
+  booktitle = 	 {The 38th International Conference on Machine Learning (ICML)},
+  pages = 	 {7760--7768},
+  year = 	 {2021},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {7},
+  publisher =    {PMLR},
+  abstract = 	 {Neural networks trained via gradient descent with random initialization and without any regularization enjoy good generalization performance in practice despite being highly overparametrized. A promising direction to explain this phenomenon is to study how initialization and overparametrization affect convergence and implicit bias of training algorithms. In this paper, we present a novel analysis of single-hidden-layer linear networks trained under gradient flow, which connects initialization, optimization, and overparametrization. Firstly, we show that the squared loss converges exponentially to its optimum at a rate that depends on the level of imbalance of the initialization. Secondly, we show that proper initialization constrains the dynamics of the network parameters to lie within an invariant set. In turn, minimizing the loss over this set leads to the min-norm solution. Finally, we show that large hidden layer width, together with (properly scaled) random initialization, ensures proximity to such an invariant set during training, allowing us to derive a novel non-asymptotic upper-bound on the distance between the trained network and the min-norm solution.},
+  pdf = {MTVM2021ICML.pdf},
+  preview = {lin_conv_two_layer.png}
+}
+
+
+@unpublished{mm2021misc,
+ author  = {Min, Hancheng and Pates, Richard  and Mallada, Enrique},
+ title   = {Coherence and Concentration in Tightly-Connected Networks},
+ year    = {2021},
+ pdf = {MPM2022TN.pdf},
+ arxiv = {2101.00981},
+ note = {technical note}
+}
+
+@article{mpm2021lcss,
+  abstract = {We introduce a novel framework to approximate the aggregate frequency dynamics of coherent synchronous generators. By leveraging recent results on dynamics concentration of tightly connected networks, we develop a hierarchy of reduced order models --based on frequency weighted balanced truncation-- that accurately approximate the aggregate system response. Our results outperform existing aggregation techniques and can be shown to monotonically improve the approximation as the hierarchy order increases.},
+  author = {Min, Hancheng and Paganini, Fernando and Mallada, Enrique},
+  doi = {10.1109/LCSYS.2020.3043733},
+  grants = {CAREER-1752362, CPS-1544771, ENERGISE-DE-EE0008006, AMPS-1736448, TRIPODS-1934979, EPCN-1711188, ARO-W911NF-17-1-0092},
+  journal = {IEEE Control Systems Letters (L-CSS)},
+  month = {11},
+  note = {also in ACC 2021},
+  number = {5},
+  pages = {1741-1746},
+  record = {early accesss Nov 2020, accepted Nov 2020, revised Nov 2020, submitted Sep 2020},
+  title = {Accurate Reduced Order Models for Coherent Heterogeneous Generators},
+  pdf = {MPM2021LCSS.pdf},
+  volume = {5},
+  year = {2021},
+  preview = {aggr_model.png},
+  arxiv = {1909.12864}
+}
+
+@inproceedings{mm2019cdc,
+  abstract = {The ability to achieve coordinated behavior --engineered or emergent--  on networked systems has attracted widespread interest over several fields. This has led to remarkable advances on the development of a theoretical understanding of the conditions under which agents within a network can reach agreement (consensus) or develop coordinated behaviors such as synchronization. However, fewer advances have been made toward explaining another commonly observed phenomena in tightly-connected networks systems: output responses of nodes in the networks are almost identical to each other despite heterogeneity in their individual dynamics. In this paper, we leverage tools from high-dimensional probability to provide an initial answer to this phenomena. More precisely, we show that for linear networks of nodal random transfer functions, as the networks size and connectivity grows, every node in the network follows the same response to an input or disturbance -- irrespectively of the source of this input. We term this behavior as dynamics concentration as it stems from the fact that the network transfer matrix uniformly converges in probability to a unique dynamic response --i.e., it concentrates-- determined by the distribution of the random transfer function of each node. We further discuss the implications of our analysis in the context of model reduction and robustness, and provide numerical evidence that similar phenomena occur in small deterministic networks over a properly defined frequency band.},
+  author = {Min, Hancheng and Mallada, Enrique},
+  booktitle = {58th IEEE Conference on Decision and Control (CDC)},
+  doi = {10.1109/CDC40024.2019.9029796},
+  grants = {ARO-W911NF-17-1-0092, CPS-1544771, EPCN-1711188, CAREER-1752362, AMPS-1736448, ENERGISE-DE-EE0008006},
+  month = {12},
+  pages = {758-763},
+  title = {Dynamics Concentration of Tightly-Connected Large-Scale Networks},
+  url = {https://mallada.ece.jhu.edu/pubs/2019-CDC-MM.pdf},
+  pdf = {MM2019CDC.pdf},
+  year = {2019},
+  preview = {iceland_step_coherence.png},
+  arxiv = {1903.06017}
+}
+
+@MastersThesis{min_MScThesis2018,
+author = {Min, Hancheng},
+title = {On Balancing Event and Area Coverage in Mobile Sensor Networks},
+school = {University of Pennsylvania},
+pdf = {https://repository.upenn.edu/cgi/viewcontent.cgi?article=1910&context=ese_papers},
+year = {2018},
+note = {Master's Thesis},
+preview = {cov_ctrl.png}
+}
+
+
+@INPROCEEDINGS{amk2018icra,
+author={O. {Arslan} and H. {Min} and D. E. {Koditschek}},
+booktitle={2018 IEEE International Conference on Robotics and Automation (ICRA)},
+title={Voronoi-Based Coverage Control of Pan/Tilt/Zoom Camera Networks},
+year={2018},
+volume={},
+number={},
+pages={5062-5069},
+keywords={cameras;computational geometry;event distribution;activity distribution;reactive coverage control algorithm;greedy gradient algorithms;pan camera network;tilt camera network;zoom camera network;continuous-and discrete-time first-order PTZ camera dynamics;coverage algorithms;locally optimal coverage configuration;first-order PTZ camera dynamics;camera network allocation problem;sensing quality measures;conic Voronoi diagrams;visual sensing quality;total coverage quality;camera orientations;PTZ camera networks;automated active network reconfiguration;flexible visual monitoring;Cameras;Sensors;Heuristic algorithms;Visualization;Resource management;Image resolution;Optimization},
+ISSN={2577-087X},
+pdf = {https://repository.upenn.edu/cgi/viewcontent.cgi?article=1907&context=ese_papers},
+month={May}
+}
+
+@article{cmbm2021tac,
+  abstract = {This paper aims to put forward the concept that learning to take safe actions in unknown environments, even with probability one guarantees, can be achieved without the need for an unbounded number of exploratory trials, provided that one is willing to navigate trade-offs between optimality, level of exposure to unsafe events, and the maximum detection time of unsafe actions. We illustrate this concept in two complementary settings. We first focus on the canonical multi-armed bandit problem and seek to study the intrinsic trade-offs of learning safety in the presence of uncertainty.  Under mild assumptions on sufficient exploration, we provide an algorithm that provably detects all unsafe machines in an (expected) finite number of rounds. The analysis also unveils a trade-off between the number of rounds needed to secure the environment and the probability of discarding safe machines.  We then consider the problem of finding optimal policies for a Markov Decision Process (MDP) with almost sure constraints. 
+    We show that the (action) value function satisfies a barrier-based decomposition which allows for the identification of feasible policies independently of the reward process. Using this decomposition, we develop a Barrier-learning algorithm, that identifies such unsafe state-action pairs in a finite expected number of steps. Our analysis further highlights a trade-off between the time lag for the underlying MDP necessary to detect unsafe actions, and the level of exposure to unsafe events. Simulations corroborate our theoretical findings, further illustrating the aforementioned trade-offs, and suggesting that safety constraints can further speed up the learning process.},
+  author = {Castellano, Agustin and Min, Hancheng and Bazerque, Juan and Mallada, Enrique},
+  month = {5},
+  volume={68},
+  number={5},
+  pages={2979-2994},
+  doi={10.1109/TAC.2023.3240925},
+  title = {Learning to Act Safely with Limited Exposure and Almost Sure Certainty},
+  pdf = {CMBM2023TAC.pdf},
+  journal = {IEEE Transaction on Automatic Control},
+  year = {2023},
+  preview = {safe_rl.png},
+  selected = {true}
+}
+
+
+@InProceedings{cmbm2022l4dc,
+  title = 	 {Reinforcement Learning with Almost Sure Constraints},
+  author =   {Castellano, Agustin and Min, Hancheng and Bazerque, Juan Andr\'es and Mallada, Enrique},
+  booktitle = 	 {The 4th Annual Learning for Dynamics and Control Conference},
+  pages = 	 {559--570},
+  year = 	 {2022},
+  volume = 	 {168},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {6},
+  publisher =    {PMLR},
+  pdf = 	 {CMBM2022L4DC.pdf},
+  url = 	 {https://proceedings.mlr.press/v168/castellano22a.html},
+  abstract = 	 {In this work we address the problem of finding feasible policies for Constrained Markov Decision Processes under probability one constraints. We argue that stationary policies are not sufficient for solving this problem, and that a rich class of policies can be found by endowing the controller with a scalar quantity, so called budget, that tracks how close the agent is to violating the constraint. We show that the minimal budget required to act safely can be obtained as the smallest fixed point of a Bellman-like operator, for which we analyze its convergence properties. We also show how to learn this quantity when the true kernel of the Markov decision process is not known, while providing sample-complexity bounds. The utility of knowing this minimal budget relies in that it can aid in the search of optimal or near-optimal policies by shrinking down the region of the state space the agent must navigate. Simulations illustrate the different nature of probability one constraints against the typically used constraints in expectation.},
+  preview = {safe_rl_l4dc.png}
+}
+
+
+@article{mtvm22prpt,
+  title={Convergence and Implicit Bias of Gradient Flow on Overparametrized Linear Networks},
+  author={Min, Hancheng and Tarmoun, Salma and Vidal, Ren\'e and Mallada, Enrique},
+  journal={Journal of Machine Learning Research},
+  year={2023},
+  arxiv = {2105.06351},
+  pdf = {MTVM2022Preprint.pdf},
+  preview = {lin_conv_two_layer.png},
+  note = {in preparation}
+}
