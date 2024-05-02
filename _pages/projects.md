@@ -24,7 +24,7 @@ horizontal: true
     <!--Image container end-->
     <!--Text container start-->
     <div>
-        Many theoretical studies on neural networks attribute their excellent empirial performance to the <b>implicit bias or regularization</b> induced by first-order algorithms when training networks under certain initialization assumptions. In particular, it is widely known that <b>sparsity/simplicity-inducing biases</b> can often be achieved by small initialization. This has motivated our investigation into the problem of training a two-layer ReLU network using gradient flow with <b>small initialization</b>. We consider a training dataset with well-separated input vectors: Any pair of input data with the same label are positively correlated, and any pair with different labels are negatively correlated. Our analysis shows that, during the early phase of training, neurons in the first layer try to align with either the positive data or the negative data, depending on its corresponding weight on the second layer. A rigorous analysis of the <b>neurons' directional dynamics</b> allows us to provide an explicit upper bound on the time it takes for all neurons to achieve good alignment with the input data, which depends on the number of data points and how well the data are separated. Ongoing works include studying such alignment under more general data distribution and understanding the effect of such bias in broader aspects of ML, such as robustness, fairness, etc..
+        Many theoretical studies on neural networks attribute their excellent empirial performance to the <b>implicit bias or regularization</b> induced by first-order algorithms when training networks under certain initialization assumptions. In particular, it is widely known that <b>sparsity/simplicity-inducing biases</b> can often be achieved by small initialization. This has motivated our investigation into the problem of training a two-layer ReLU network using gradient flow with <b>small initialization</b>. We consider a training dataset with well-separated input vectors: Any pair of input data with the same label are positively correlated, and any pair with different labels are negatively correlated. Our analysis shows that, during the early phase of training, neurons in the first layer try to align with either the positive data or the negative data, depending on its corresponding weight on the second layer. A rigorous analysis of the <b>neurons' directional dynamics</b> allows us to provide an explicit upper bound on the time it takes for all neurons to achieve good alignment with the input data, which depends on the number of data points and how well the data are separated. Our lastest work has studied such alignment under more general data distribution and understanding the effect of such bias in broader aspects of ML, such as robustness, fairness, etc..
 
         <br>
         <br>
@@ -32,10 +32,12 @@ horizontal: true
         <u>Related work</u>:
       
         <ul>
-          <li><b>H. Min</b>, E. Mallada, and R. Vidal, “<i>Early Neuron Alignment in Two-layer ReLU Networks with Small Initialization</i>,” in 12th International Conference on Learning Representations (ICLR), to appear. 
+          <li><b>H. Min</b> and R. Vidal, “<i>Can Implicit Bias Imply Adversarial Robustness?</i>,” the 41th International Conference on Machine Learning (\textbf{ICML}), 2024, to appear. 
+          </li>
+          <li><b>H. Min</b>, E. Mallada, and R. Vidal, “<i>Early Neuron Alignment in Two-layer ReLU Networks with Small Initialization</i>,” in 12th International Conference on Learning Representations (ICLR), 2024, to appear. 
           <a href="https://openreview.net/forum?id=QibPzdVrRu">[URL]</a>
           <a href="../assets/pdf/MMV2024ICLR.pdf">[PDF]</a>
-          <a href="../assets/posters/MMV2024ICLR.png">[POSTER]</a>
+          <a href="../assets/posters/MMV2024ICLR.pdf">[POSTER]</a>
           <a href="../assets/slides/MMV2024ICLR.pdf">[SLIDES]</a>
           </li>
         </ul>
@@ -121,7 +123,7 @@ horizontal: true
         <u>Related work</u>:
 
         <ul>
-          <li><b>H. Min</b>, R. Pates, and E. Mallada, “<i>A frequency domain analysis of slow coherency in networked systems</i>,” 2023, submitted to Automatica, under review. 
+          <li><b>H. Min</b>, R. Pates, and E. Mallada, “<i>A frequency domain analysis of slow coherency in networked systems</i>,” 2023, submitted to Automatica, under review, under revision. 
           <a href="https://arxiv.org/abs/2302.08438">[URL]</a>
           <a href="../assets/pdf/MPM2023Preprint.pdf">[PDF]</a>
           </li>
