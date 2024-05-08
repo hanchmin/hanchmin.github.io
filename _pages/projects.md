@@ -32,7 +32,7 @@ horizontal: true
         <u>Related work</u>:
       
         <ul>
-          <li><b>H. Min</b> and R. Vidal, “<i>Can Implicit Bias Imply Adversarial Robustness?</i>,” the 41th International Conference on Machine Learning (\textbf{ICML}), 2024, to appear. 
+          <li><b>H. Min</b> and R. Vidal, “<i>Can Implicit Bias Imply Adversarial Robustness?</i>,” in the 41th International Conference on Machine Learning (ICML), 2024, to appear. 
           </li>
           <li><b>H. Min</b>, E. Mallada, and R. Vidal, “<i>Early Neuron Alignment in Two-layer ReLU Networks with Small Initialization</i>,” in 12th International Conference on Learning Representations (ICLR), 2024, to appear. 
           <a href="https://openreview.net/forum?id=QibPzdVrRu">[URL]</a>
