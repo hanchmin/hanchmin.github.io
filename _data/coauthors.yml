@@ -1,34 +1,27 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Mallada":
+  - firstname: ["Enrique", "E."]
+    url: https://mallada.ece.jhu.edu/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Vidal":
+  - firstname: ["Rene", "R.", "Ren&#92;&#39;e", "René"]
+    url: http://vision.jhu.edu/rvidal.html
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Bazerque":
+  - firstname: ["Juan", "J.", "Juan Andr&#92;&#39;es", "Juan Andrés"]
+    url: https://www.engineering.pitt.edu/people/faculty/juan-bazerque-giusto/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Castellano":
+  - firstname: ["Agustin", "A."]
+    url: https://mallada.ece.jhu.edu/people/agustin-castellano/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Pates":
+  - firstname: ["Richard", "R."]
+    url: https://www.richardpates.com/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Jiang":
+  - firstname: ["Yan", "Y."]
+    url: https://www.yanjiang.info/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Zhang":
+  - firstname: ["Baosen", "B."]
+    url: https://zhangbaosen.github.io/
