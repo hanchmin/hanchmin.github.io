@@ -32,7 +32,8 @@ horizontal: true
         <u>Related work</u>:
       
         <ul>
-          <li><b>H. Min</b> and R. Vidal, “<i>Can Implicit Bias Imply Adversarial Robustness?</i>,” in the 41th International Conference on Machine Learning (ICML), 2024, to appear. 
+          <li><b>H. Min</b> and R. Vidal, “<i>Can Implicit Bias Imply Adversarial Robustness?</i>,” in the 41th International Conference on Machine Learning (ICML), 2024, vol. 235, PMLR, 21–27 Jul 2024, pp. 35687–35718. 
+          <a href="https://proceedings.mlr.press/v235/min24a.html">[URL]</a>
           <a href="../assets/pdf/MV2024ICML.pdf">[PDF]</a>
           <a href="../assets/posters/MV2024ICML.pdf">[POSTER]</a>
           <a href="https://github.com/hanchmin/pReLU_ICML24">[CODE]</a>
@@ -73,7 +74,7 @@ horizontal: true
       
         <ul>
           <li><b>H. Min</b>, S. Tarmoun, R. Vidal, and E. Mallada, “<i>Convergence and implicit bias of gradient flow on overparametrized linear networks</i>,” 2023, in preparation. </li>
-          <li><b>H. Min</b>, R. Vidal, and E. Mallada, “<i>On the convergence of gradient flow on multi-layer linear models</i>,” in Proceedings of the 40th International Conference on Machine Learning (ICML), vol. 202, PMLR, Jun. 2023, pp. 24 850–24 887. 
+          <li><b>H. Min</b>, R. Vidal, and E. Mallada, “<i>On the convergence of gradient flow on multi-layer linear models</i>,” in Proceedings of the 40th International Conference on Machine Learning (ICML), vol. 202, PMLR, Jun. 2023, pp. 24850–24887. 
           <a href="https://proceedings.mlr.press/v202/min23d.html">[URL]</a>
           <a href="../assets/pdf/MVM2023ICML.pdf">[PDF]</a>
           <a href="../assets/posters/MVM2023ICML.png">[POSTER]</a>
