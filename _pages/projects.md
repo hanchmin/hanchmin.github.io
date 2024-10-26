@@ -127,7 +127,7 @@ horizontal: true
         <u>Related work</u>:
 
         <ul>
-          <li><b>H. Min</b>, R. Pates, and E. Mallada, “<i>A frequency domain analysis of slow coherency in networked systems</i>,” 2023, submitted to Automatica, under review, under revision. 
+          <li><b>H. Min</b>, R. Pates, and E. Mallada, “<i>A frequency domain analysis of slow coherency in networked systems</i>,” 2024, Automatica, accepted. 
           <a href="https://arxiv.org/abs/2302.08438">[URL]</a>
           <a href="../assets/pdf/MPM2023Preprint.pdf">[PDF]</a>
           </li>
