@@ -1,3 +1,13 @@
+@InProceedings{xmlmtmv2025aistats,
+  title =    {Understanding the Learning Dynamics of LoRA: A Gradient Flow Perspective on Low-Rank Adaptation in Matrix Factorization},
+  author =       {Xu, Ziqing and Min, Hancheng and Luo, Jinqi and MacDonald, Lachlan Ewen and Tarmoun, Salma and Mallada, Enrique and Vidal, Rene},
+  booktitle =    {Proceedings of The 28th International Conference on Artificial Intelligence and Statistics},
+  year =   {2025},
+  abstract =   {Despite Low-Rank Adaptation's (LoRA) empirical success in fine-tuning pretrained models, there is little theoretical understanding of how first-order methods with carefully crafted initialization adapt models to new tasks. In this work, we take the first step towards bridging this gap by theoretically analyzing the learning dynamics of LoRA for matrix factorization (MF) under gradient flow (GF), emphasizing the crucial role of initialization. For small initialization, we theoretically show that GF converges to a neighborhood of the optimal solution, with smaller initialization leading to lower final error. Our analysis shows that the final error is affected by the misalignment between the singular spaces of the model and the target matrix, and reducing the initialization scale improves alignment. To address this misalignment, we propose a spectral initialization for LoRA in MF and theoretically prove that GF with small spectral initialization can converge to the target matrix with arbitrary precision. Numerical experiments from MF and image classification validate our findings.},
+  pdf = {XMLMTMV2025AISTATS.pdf}
+}
+
+
 @InProceedings{mv2024icml,
   title =    {Can Implicit Bias Imply Adversarial Robustness?},
   author =       {Min, Hancheng and Vidal, Ren\'e},
