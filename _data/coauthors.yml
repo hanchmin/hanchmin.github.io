@@ -25,3 +25,15 @@
 "Zhang":
   - firstname: ["Baosen", "B."]
     url: https://zhangbaosen.github.io/
+
+"Luo":
+  - firstname: ["Jinqi", "J."]
+    url: https://peterljq.github.io/
+
+"Chan":
+  - firstname: ["Ryan", "R."]
+    url: https://ryanchankh.github.io/
+
+"MacDonald":
+  - firstname: ["Lachlan","L.", "Lachlan Ewen"]
+    url: https://lemacdonald.github.io/
