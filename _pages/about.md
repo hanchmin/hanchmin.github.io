@@ -13,6 +13,7 @@ profile:
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
+recent_papers: true
 ---
 
 I am Postdoc Researcher at [Center for Innovation in Data Engineering and Science (IDEAS)](https://ideas.seas.upenn.edu/), University of Pennsylvania, advised by [Prof. René Vidal](http://vision.jhu.edu/rvidal.html). My research centers around building mathematical principles that facilitates the interplay between machine learning and dynamical systems. Recently, I am mainly interested in analyzing gradient-based optimization algorithms on overparametrized neural networks from a dynamical system perspective. 
