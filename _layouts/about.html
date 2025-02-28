@@ -9,7 +9,7 @@ layout: default
       {% if site.title == "blank" -%}
       <span style="color: #990000 ;font-weight:bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
     </h1>
-    <p><span style="color: var(--global-footer-bg-color);font-weight:bold">Postdoctral Researcher,</span>
+    <p><span style="color: var(--global-footer-bg-color);font-weight:bold">Postdoctoral Researcher,</span>
       <em>Electrical and Systems Engineering, University of Pennsylvania</em><br>
       <span style="color:var(--global-footer-bg-color);font-weight:bold">Email: </span><em>hanchmin &#91at&#93 seas &#91dot&#93 upenn &#91dot&#93 edu</em></p>
   </header>
@@ -54,8 +54,16 @@ layout: default
     {% if page.news -%}
     <br>
     <br>
-    <h2><a href="{{ '/update/' | relative_url }}" style="color: inherit;">News</a></h2>
+    <h2>Recent Update</h2>
     {%- include news.html %}
+    {%- endif %}
+
+    <!-- Selected papers -->
+    {% if page.recent_papers -%}
+    <br>
+    <br>
+    <h2>Recent publications</h2>
+    {%- include recent_papers.html %}
     {%- endif %}
 
     <!-- Selected papers -->
