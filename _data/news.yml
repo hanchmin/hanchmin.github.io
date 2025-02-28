@@ -1,0 +1,148 @@
+items:
+  - date: 2025-02-26
+    content: >
+      Our paper "Concept Lancet: Decomposing and Transplanting Representations for Diffusion-Based Image Editing" is accepted to {CVPR 2025}!
+      
+  - date: 2025-01-22
+    content: >
+      Our paper "Understanding the Learning Dynamics of LoRA: A Gradient Flow Perspective on Low-Rank Adaptation in Matrix Factorization" is accepted to {AISTATS 2025}!
+      
+  - date: 2024-10-25
+    content: >
+      Our paper "A Frequency Domain Analysis of Slow Coherency in Networked Systems" is accepted to {Automatica}!
+      
+  - date: 2024-05-01
+    content: >
+      Our paper "Can Implicit Bias Imply Adversarial Robustness?" is accepted to {ICML 2024}!
+      
+  - date: 2024-01-30
+    content: >
+      Our paper "Oscillations-Aware Frequency Security Assessment via Efficient Worst-Case Frequency Nadir Computation" is accepted to {PSCC 2024}!
+      
+  - date: 2024-01-16
+    content: >
+      Our paper "Early Neuron Alignment in Two-layer ReLU Networks with Small Initialization" is accepted to {ICLR 2024}!
+      
+  - date: 2023-11-16
+    content: >
+      I gave a talk on "Early Neuron Alignment in Two-layer ReLU Networks with Small Initialization" at the DeepMath Conference 2023 at Johns Hopkins University.
+      
+  - date: 2023-09-30
+    content: >
+      I attended the 2022 Mathematical and Scientific Foundations of Deep Learning Annual Meeting in New York City.
+      
+  - date: 2023-07-24
+    content: >
+      I attended ICML2023 at Honolulu, Hawaii.
+      
+  - date: 2023-07-21
+    content: >
+      I defended my Ph.D. Thesis.
+      
+  - date: 2023-06-16
+    content: >
+      I attended L4DC2023 at Penn.
+      
+  - date: 2023-06-01
+    content: >
+      I gave a presentation "Spectral clustering and model reduction for weakly-connected coherent network systems" at the 2023 American Control Conference.
+      
+  - date: 2023-04-25
+    content: >
+      Our paper "On the Convergence of Gradient Flow on Multi-layer Linear Models" is accepted to {ICML 2023}!
+      
+  - date: 2023-03-15
+    content: >
+      Our paper "Learning Coherent Clusters in Weakly-Connected Network Systems" is accepted to {L4DC 2023}!
+      
+  - date: 2023-01-30
+    content: >
+      Our paper "Linear convergence of gradient descent for overparametrized finite width two-layer linear networks with general initialization" is accepted to {AISTATS 2023}!
+      
+  - date: 2023-01-20
+    content: >
+      I gave a talk "Learning coherent clusters for modeling and analysis of power system dynamics" at ROSEI Summit for Sustainable Energy Research at Johns Hopkins University.
+      
+  - date: 2023-01-07
+    content: >
+      Our paper "Spectral clustering and model reduction for weakly-connected coherent network systems" is accepted to {ACC 2023}!
+      
+  - date: 2023-01-07
+    content: >
+      Our paper "Learning to act safely with limited exposure and almost sure certainty" is accepted to {TAC}!
+      
+  - date: 2022-09-30
+    content: >
+      I attended the 2022 Mathematical and Scientific Foundations of Deep Learning Annual Meeting in New York City.
+      
+  - date: 2022-06-30
+    content: >
+      I gave a talk on "Convergence of overparametrized networks" at the RSRG Seminar at the California Institute of Technology.
+      
+  - date: 2022-06-20
+    content: >
+      I attended the 4th Learning for Dynamics and Control Conference in Palo Alto, CA.
+      
+  - date: 2022-06-10
+    content: >
+      I gave a talk on "Convergence of overparametrized networks" at the semiautonomous seminar, University of Berkeley.
+      
+  - date: 2022-03-30
+    content: >
+      I gave a talk on "Convergence of overparametrized networks" during Spring 2022 MINDS Retreat.
+      
+  - date: 2022-03-07
+    content: >
+      Our paper "Reinforcement learning with almost sure constraints" is accepted to {L4DC 2022}
+      
+  - date: 2022-01-12
+    content: >
+      I gave a talk on "convergence of overparametrized networks" during 2022 TRIPODS Winter School & Workshop on Interplay between Artificial Intelligence and Dynamical Systems.
+      
+  - date: 2021-09-30
+    content: >
+      I attended the 2021 Mathematical and Scientific Foundations of Deep Learning Annual Meeting in New York City.
+      
+  - date: 2021-09-12
+    content: >
+      I gave a virtual presentation "On the explicit role of initialization on the convergence and implicit bias of overparametrized linear networks" during the 2021 THEORINET Retreat.
+      
+  - date: 2021-08-15
+    content: >
+      I passed the GBO Exam at ECE department at Hopkins.
+      
+  - date: 2021-07-12
+    content: >
+      I gave a virtual presentation "On the explicit role of initialization on the convergence and implicit bias of overparametrized linear networks" at the 2021 International Conference on Machine Learning.
+      
+  - date: 2021-05-12
+    content: >
+      I gave a virtual presentation "Accurate Reduced-Order Models for Coherent Heterogeneous Generators" at the 2021 American Control Conference.
+      
+  - date: 2021-05-07
+    content: >
+      My paper "On the explicit role of initialization on the convergence and implicit bias of overparametrized linear networks" accepted to {ICML 2021}!
+      
+  - date: 2021-01-15
+    content: >
+      I received MINDS Spring Fellowship 2021.
+      
+  - date: 2020-11-07
+    content: >
+      My paper "Accurate Reduced-Order Models for Coherent Heterogeneous Generators" accepted to {LCSS/ACC 2021}!
+      
+  - date: 2019-12-06
+    content: >
+      I gave a presentation "Dynamics Concentration in Tightly-connected Networks" at 2019 Conference on Decision and Control, Nice, France.
+      
+  - date: 2019-11-15
+    content: >
+      I received MINDS Spring Fellowship 2020.
+      
+  - date: 2019-06-07
+    content: >
+      My paper "Dynamics Concentration in Tightly-connected Networks" is accepted to {CDC 2019}.
+      
+  - date: 2019-02-01
+    content: >
+      I passed the departmental qualifying exam at ECE at Hopkins.
