@@ -8,7 +8,7 @@ profile:
   align: right
   image: profile.png
   image_circular: true # crops the image to make it circular
-  image_width: 25px
+  image_width: 1rem
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
