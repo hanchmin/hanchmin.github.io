@@ -188,6 +188,19 @@
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-1" role="button">Website</a>
           {%- endif %}
           </span>
+          {% if entry.abstract -%}
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>{{ entry.abstract }}</p>
+          </div>
+          {%- endif -%}
+
+          {% if entry.bibtex_show -%}
+          <!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            {% highlight bibtex %}{{ entry.bibtex | hideCustomBibtex }}{% endhighlight %}
+          </div>
+          {%- endif %}
         </div>
         <div class="periodical">
           {{ entry.note | strip }}
@@ -225,18 +238,5 @@
           </div>
           {%- endif %}
 
-          {% if entry.abstract -%}
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>{{ entry.abstract }}</p>
-          </div>
-          {%- endif -%}
-
-          {% if entry.bibtex_show -%}
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            {% highlight bibtex %}{{ entry.bibtex | hideCustomBibtex }}{% endhighlight %}
-          </div>
-          {%- endif %}
         </div>
       </div>
