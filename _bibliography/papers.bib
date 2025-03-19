@@ -10,7 +10,7 @@
 
 @InProceedings{xmlmtmv2025aistats,
   title = {Understanding the Learning Dynamics of LoRA: A Gradient Flow Perspective on Low-Rank Adaptation in Matrix Factorization},
-  author = {Xu, Ziqing and Min, Hancheng and Luo, Jinqi and MacDonald, Lachlan Ewen and Tarmoun, Salma and Mallada, Enrique and Vidal, Rene},
+  author = {Xu, Ziqing and Min, Hancheng and Luo, Jinqi and MacDonald, Lachlan Ewen and Tarmoun, Salma and Mallada, Enrique and Vidal, Ren\'e},
   booktitle = {International Conference on Artificial Intelligence and Statistics ({AISTATS})},
   year = {2025},
   abstract = {Despite Low-Rank Adaptation's (LoRA) empirical success in fine-tuning pretrained models, there is little theoretical understanding of how first-order methods with carefully crafted initialization adapt models to new tasks. In this work, we take the first step towards bridging this gap by theoretically analyzing the learning dynamics of LoRA for matrix factorization (MF) under gradient flow (GF), emphasizing the crucial role of initialization. For small initialization, we theoretically show that GF converges to a neighborhood of the optimal solution, with smaller initialization leading to lower final error. Our analysis shows that the final error is affected by the misalignment between the singular spaces of the model and the target matrix, and reducing the initialization scale improves alignment. To address this misalignment, we propose a spectral initialization for LoRA in MF and theoretically prove that GF with small spectral initialization can converge to the target matrix with arbitrary precision. Numerical experiments from MF and image classification validate our findings.},
@@ -100,7 +100,7 @@
 
 @InProceedings{xu2023aistat,
   title = {Linear Convergence of Gradient Descent For Finite Width Over-parametrized Linear Networks With General Initialization},
-  author = {Xu, Ziqing and Min, Hancheng and Tarmoun, Salma and Mallada, Enrique and Vidal, Rene},
+  author = {Xu, Ziqing and Min, Hancheng and Tarmoun, Salma and Mallada, Enrique and Vidal, Ren\'e},
   booktitle = {International Conference on Artificial Intelligence and Statistics ({AISTATS})},
   pages = {2262--2284},
   year = {2023},
@@ -202,13 +202,21 @@
   doi = {10.1109/CDC40024.2019.9029796}
 }
 
-@MastersThesis{min_MScThesis2018,
-  title = {On Balancing Event and Area Coverage in Mobile Sensor Networks},
-  author = {Min, Hancheng},
-  year = {2018},
-  pdf = {https://repository.upenn.edu/cgi/viewcontent.cgi?article=1910&context=ese_papers},
-  preview = {cov_ctrl.png}
+@thesis{min_MScThesis2018,
+author = {Min, Hancheng},
+title = {On Balancing Event and Area Coverage in Mobile Sensor Networks},
+school = {Master's Thesis, University of Pennsylvania},
+year = {2018}
 }
+
+
+@thesis{min_PhDThesis2018,
+author = {Min, Hancheng},
+title = {Exploiting Structural Properties in the Analysis of High-dimensional Dynamical Systems},
+school = {Ph.D. Thesis, Johns Hopkins University},
+year = {2023}
+}
+
 
 @INPROCEEDINGS{amk2018icra,
   title = {Voronoi-Based Coverage Control of Pan/Tilt/Zoom Camera Networks},
@@ -217,8 +225,7 @@
   pages = {5062-5069},
   year = {2018},
   month = {May},
-  bibtex_show = {true},
-  pdf = {https://repository.upenn.edu/cgi/viewcontent.cgi?article=1907&context=ese_papers}
+  bibtex_show = {true}
 }
 
 @article{cmbm2021tac,
@@ -251,6 +258,16 @@
   bibtex_show = {true},
   preview = {safe_rl_l4dc.png}
 }
+@InProceedings{cmbm2023acssc,
+  author={Castellano, Agustin and Min, Hancheng and Bazerque, Juan Andrés and Mallada, Enrique},
+  booktitle={2023 57th Asilomar Conference on Signals, Systems, and Computers}, 
+  title={Learning Safety Critics via a Non-Contractive Binary Bellman Operator}, 
+  year={2023},
+  pages={814-821},
+  bibtex_show = {true},
+  doi={10.1109/IEEECONF59524.2023.10476995}
+  }
+
 
 @article{mtvm22prpt,
   title = {Convergence and Implicit Bias of Gradient Flow on Overparametrized Linear Networks},

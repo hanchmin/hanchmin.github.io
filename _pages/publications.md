@@ -14,7 +14,7 @@ nav_order: 1
   <h2>Conference</h2>
   {% bibliography -f papers -q @InProceedings %}
   <h2>Thesis</h2>
-  {% bibliography -f papers -q @MastersThesis %}
+  {% bibliography -f papers -q @thesis %}
   <h2>Misc</h2>
   {% bibliography -f papers -q @unpublished %}
   
