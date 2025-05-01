@@ -1,4 +1,8 @@
 items:
+  - date: 2025-05-01
+    content: >
+      Our paper "Gradient Flow Provably Learns Robust Classifiers for Orthonormal GMMs" is accepted to {ICML 2025}! See you in Vancouver!
+      
   - date: 2025-04-18
     content: >
       Our paper "A Local Polyak-Łojasiewicz and Descent Lemma of Gradient Descent For Overparametrized Linear Models" is accepted to {TMLR}!
@@ -125,7 +129,7 @@ items:
       
   - date: 2021-05-07
     content: >
-      My paper "On the explicit role of initialization on the convergence and implicit bias of overparametrized linear networks" accepted to {ICML 2021}!
+      Our paper "On the explicit role of initialization on the convergence and implicit bias of overparametrized linear networks" accepted to {ICML 2021}!
       
   - date: 2021-01-15
     content: >
@@ -133,7 +137,7 @@ items:
       
   - date: 2020-11-07
     content: >
-      My paper "Accurate Reduced-Order Models for Coherent Heterogeneous Generators" accepted to {LCSS/ACC 2021}!
+      Our paper "Accurate Reduced-Order Models for Coherent Heterogeneous Generators" accepted to {LCSS/ACC 2021}!
       
   - date: 2019-12-06
     content: >
@@ -145,7 +149,7 @@ items:
       
   - date: 2019-06-07
     content: >
-      My paper "Dynamics Concentration in Tightly-connected Networks" is accepted to {CDC 2019}.
+      Our paper "Dynamics Concentration in Tightly-connected Networks" is accepted to {CDC 2019}.
       
   - date: 2019-02-01
     content: >
