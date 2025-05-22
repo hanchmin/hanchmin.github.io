@@ -18,8 +18,8 @@ horizontal: true
   </summary>
     <br>
     <!--Image container start-->
-    <div class="box">
-        <img src="../assets/img/publication_preview/dir_flow.png" alt="project thumbnail" width="50%" style="float: left; margin: 5px">
+    <div class="project-image-container">
+        <img src="../assets/img/publication_preview/dir_flow.png" alt="project thumbnail" class="project-thumbnail">
     </div>
     <!--Image container end-->
     <!--Text container start-->
@@ -59,8 +59,8 @@ horizontal: true
   </summary>
     <br>
     <!--Image container start-->
-    <div class="box">
-        <img src="../assets/img/publication_preview/lin_conv_two_layer.png" alt="project thumbnail" width="50%" style="float: left; margin: 5px">
+    <div class="project-image-container">
+        <img src="../assets/img/publication_preview/lin_conv_two_layer.png" alt="project thumbnail" class="project-thumbnail">
     </div>
     <!--Image container end-->
     <!--Text container start-->
@@ -112,8 +112,8 @@ horizontal: true
   </summary>
   <br>
     <!--Image container start-->
-    <div class="box">
-        <img src="../assets/img/algo_illustrationv2.png" alt="project thumbnail" width="50%" style="float: left; margin: 8px">
+    <div class="project-image-container">
+        <img src="../assets/img/publication_preview/algo_illustrationv2.png" alt="project thumbnail" class="project-thumbnail">
     </div>
     <!--Image container end-->
     <!--Text container start-->
@@ -166,8 +166,8 @@ horizontal: true
   </summary>
   <br>
     <!--Image container start-->
-    <div class="box">
-        <img src="../assets/img/publication_preview/safe_rl.png" alt="project thumbnail" width="50%" style="float: left; margin: 8px">
+    <div class="project-image-container">
+        <img src="../assets/img/publication_preview/safe_rl.png" alt="project thumbnail" class="project-thumbnail">
     </div>
     <!--Image container end-->
     <!--Text container start-->

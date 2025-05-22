@@ -126,3 +126,100 @@ $max-content-width: {{ site.max_width }};
 .publications {
   /* padding-top: 1rem; */ /* Uncomment and adjust if you need more space at the very top of the publications block */
 }
+
+
+/* assets/css/main.scss */
+
+.projects details {
+  background-color: var(--global-card-bg-color, #fdfdfd); /* Optional: slight background tint */
+  border: 1px solid var(--global-divider-color, #eee);
+  border-radius: 6px;
+  padding: 1rem 1.5rem; /* Add padding inside the details block */
+  margin-bottom: 1.5rem; /* Space between project items */
+  overflow: hidden; /* To contain floats properly */
+}
+
+.projects details[open] {
+  /* Styles for when the details element is open, if needed */
+  /* e.g., box-shadow: 0 2px 5px rgba(0,0,0,0.05); */
+}
+
+/* assets/css/main.scss */
+
+.projects details summary {
+  font-size: 1.3rem; /* Make project titles noticeable */
+  font-weight: 500;
+  color: var(--global-theme-color, #007bff); /* Use theme color for interactivity cue */
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem; /* Space between summary and the <br> or content */
+  list-style-position: inside; /* If you want the default disclosure triangle inside */
+}
+
+.projects details summary:hover {
+  color: var(--global-theme-color-light, #0056b3); /* Darken on hover */
+}
+
+/* Styling for the <i> tag within summary if you want to keep it distinct */
+.projects details summary i {
+  font-style: italic;
+  color: var(--global-text-color); /* Or a specific color for the title text */
+  font-weight: 500; /* Match summary weight or make it slightly different */
+}
+
+/* assets/css/main.scss */
+
+.project-image-container {
+  float: left;
+  width: 40%; /* Adjust as needed, e.g., 30%, 200px */
+  margin-right: 1.5rem; /* Space between image and text */
+  margin-bottom: 0.5rem; /* Space below image if text is short */
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Optional: slightly rounded corners */
+  border: 1px solid var(--global-divider-color, #eee); /* Optional: light border */
+}
+
+/* assets/css/main.scss */
+
+/* The div containing the project description text */
+.projects details > div:not(.project-image-container) { /* Target the div that's NOT the image container */
+  overflow: hidden; /* This helps the div properly contain its content and respect the floated image */
+  /* Or use a clearfix if you prefer, but overflow:hidden is often simpler for this case */
+}
+
+/* Add a clearfix after each project's content if float issues persist,
+   especially if the content inside details doesn't always clear the floated image.
+   This would be added inside the <details> tag, after the text and image.
+   <div style="clear:both;"></div>
+*/
+
+/* assets/css/main.scss */
+
+.projects details u { /* Targeting the <u>Related work</u> */
+  font-weight: 600;   /* Make it bolder */
+  text-decoration: none; /* Remove underline if you prefer, or keep it */
+  display: inline-block; /* Allows margin-top */
+  margin-top: 1rem;    /* Space above "Related work" */
+  margin-bottom: 0.5rem; /* Space between "Related work" and the list */
+  font-size: 1.05em; /* Slightly larger than normal text */
+}
+
+.projects details ul {
+  list-style-type: disc; /* Or square, or none if you prefer custom bullets */
+  padding-left: 20px; /* Standard indentation for lists */
+  margin-bottom: 1rem; /* Space after the list */
+}
+
+.projects details ul li {
+  margin-bottom: 0.5rem; /* Space between list items */
+  line-height: 1.5;    /* Improve readability of list items */
+}
+
+.projects details ul li a {
+  margin-left: 0.3em; /* Space before [URL], [PDF] links */
+  font-weight: 500;
+}
