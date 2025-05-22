@@ -21,3 +21,160 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+.content-section.card-style {
+  background-color: #fcfcfc;
+  padding: 0.75rem; /* MODIFIED: Adjust 0.75rem as needed */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.05); */
+  /* border-top: 3px solid var(--global-theme-color); */
+}
+
+.content-section.card-style h2 {
+  margin-top: 0;
+  /* margin-bottom: 1rem; */
+}
+
+.meta-links {
+  margin-top: -0.2rem; /* Adjust as needed */
+  margin-bottom: 0.0rem; /* Adjust as needed */
+}
+
+.author-details {
+  margin-bottom: 0.2rem; /* Adjust as needed */
+}
+
+.content-section.card-style p,
+.content-section.card-style li,
+.content-section.card-style .news-item, /* Target specific elements if needed */
+.content-section.card-style .publication { /* Assuming .publication class for bib entries */
+  line-height: 1.4; /* Default is often 1.2 to 1.5. Experiment with values like 1.6, 1.7 */
+}
+
+.content-section.card-style h2 {
+  margin-top: 0; /* Keep this from previous suggestions */
+  font-weight: 600; /* Or 'bold'. Most themes default h2 to bold, adjust if needed. */
+  /* color: #333333; */ /* Optional: Uncomment and set a specific dark color if the default isn't strong enough. */
+  margin-bottom: 1.25rem; /* Adjust this value for more/less space below the title */
+  line-height: 1.3; /* Ensures good spacing if titles wrap to two lines */
+}
+
+/* Style for the link within an h2, like "Selected publications" */
+.content-section.card-style h2 a {
+  color: inherit; /* This is already in your HTML inline style, but good to have in CSS */
+  text-decoration: none; /* Remove default underline from the link */
+}
+
+.content-section.card-style h2 a:hover,
+.content-section.card-style h2 a:focus {
+  text-decoration: underline; /* Add underline on hover/focus for better UX */
+  /* color: var(--global-theme-color); */ /* Optional: Change color on hover to your theme's accent color */
+}
+
+/* In your main CSS file (e.g., assets/css/main.scss) */
+.content-section.card-style h2 {
+  margin-top: 0;
+  font-weight: 600; /* Or 'bold' */
+  font-size: 1.75rem; /* Adjust this value as needed. Common h2 sizes are 1.5rem to 2rem */
+  margin-bottom: 1.25rem;
+  line-height: 1.3;
+  /* color: #333333; */ /* Optional: Specific dark color */
+  /* border-bottom: 1px solid #e0e0e0; */ /* Optional: for separator line style */
+  /* padding-bottom: 0.6rem; */ /* Optional: if using border-bottom */
+}
+
+.content-section.card-style h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.content-section.card-style h2 a:hover,
+.content-section.card-style h2 a:focus {
+  text-decoration: underline;
+  /* color: var(--global-theme-color); */ /* Optional: Change color on hover */
+}
+
+
+
+
+/* In your assets/css/main.scss or equivalent */
+
+.toggle-indicator-container {
+  /* Style this container to position the button */
+  display: inline-block; /* Make it flow with the text */
+  margin-left: 0.5em; /* Add a small space after the paragraph text */
+  /* Remove previous margin-top/bottom if they were for block display */
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: baseline; /* Align the button vertically with the text */
+  line-height: 1; /* Prevent extra space below the button */
+}
+
+/* Style for the toggle button/link */
+#toggle-bio-button.toggle-indicator {
+  /* Use theme colors or simple styles */
+  color: var(--global-theme-color, #007bff); /* Example: use theme color or blue */
+  background: none;
+  border: none;
+  padding: 0; /* Remove default button padding */
+  cursor: pointer;
+  font-size: 0.9em; /* Make it smaller */
+  /* Remove margin-left if it was here */
+}
+
+#toggle-bio-button.toggle-indicator:hover {
+  text-decoration: underline;
+  color: var(--global-theme-color, #0056b3); /* Darker shade on hover */
+}
+
+/* Ensure the icon has space */
+#toggle-bio-button.toggle-indicator i {
+  margin-left: 0.3em;
+}
+
+/* Style for the expanded content */
+#more-bio {
+  margin-top: 1rem; /* Space above the expanded content */
+  /* Add any other styling for the expanded section if needed */
+}
+
+/* Optional: Adjust spacing for the bio content wrapper */
+#bio-content {
+  /* Add padding or margins here if needed to control space around the bio text */
+  /* padding-right: 1rem; */ /* Example: add some space to the right of the text */
+}
+
+/* Ensure the content sections below the bio have appropriate top margin */
+.content-section.card-style {
+  margin-top: 2rem; /* Keep or adjust this from previous suggestions */
+  /* ... other styles ... */
+}
+
+
+/* assets/css/main.scss */
+
+/* Styling for publication section titles (Journal, Conference, etc.) */
+.publications > h2 { /* Target direct children h2 of .publications div */
+  font-size: 1.6rem;   /* Adjust to your preference, e.g., 1.75rem to match other h2s or slightly smaller */
+  font-weight: 600;    /* Or 'bold' */
+  color: var(--global-text-color); /* Use your theme's default text color for consistency */
+  margin-top: 2.5rem;  /* Space above each section title */
+  margin-bottom: 1.25rem;/* Space between the title and the list of publications */
+  padding-bottom: 0.6rem;/* Adds a little space between text and the border */
+  border-bottom: 1px solid var(--global-divider-color, #e0e0e0); /* Subtle separator line; uses theme variable or fallback */
+  line-height: 1.3;    /* Good for readability if titles wrap */
+}
+
+/* Adjust top margin for the very first section title on the publications page */
+.publications > h2:first-of-type {
+  margin-top: 1rem; /* Reduce space above the first title, as page title/description already provide some */
+}
+
+/* assets/css/main.scss */
+
+.publications {
+  /* padding-top: 1rem; */ /* Uncomment and adjust if you need more space at the very top of the publications block */
+  /* Add other styles for the .publications container if needed */
+}

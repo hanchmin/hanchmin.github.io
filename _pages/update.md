@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Update
-permalink: /update/
+title: Updates
+permalink: /updates/
 nav: true
-nav_order: 6
+nav_order: 3
 ---
 
 <div class="news">

@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 show_preview: false
 description: List of my publications and preprints
-nav: false
+nav: true
 nav_order: 1
 ---
 <!-- _pages/publications.md -->
