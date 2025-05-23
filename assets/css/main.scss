@@ -223,3 +223,35 @@ $max-content-width: {{ site.max_width }};
   margin-left: 0.3em; /* Space before [URL], [PDF] links */
   font-weight: 500;
 }
+
+// Dark mode styling for content-section cards
+html[data-theme="dark"] .content-section.card-style {
+  background-color: var(--global-card-bg-color); // Use the theme's defined card background for dark mode
+  // If you want a border in dark mode for these cards, you can add:
+  // border: 1px solid var(--global-divider-color);
+}
+
+// Ensure h2 text within these cards has good contrast in dark mode
+html[data-theme="dark"] .content-section.card-style h2 {
+  color: var(--global-text-color);
+}
+
+// Ensure links within h2 also have good contrast
+html[data-theme="dark"] .content-section.card-style h2 a {
+  color: var(--global-theme-color); // Use the theme's primary link color for dark mode
+}
+
+// Ensure general text within these cards has good contrast
+html[data-theme="dark"] .content-section.card-style p,
+html[data-theme="dark"] .content-section.card-style li,
+html[data-theme="dark"] .content-section.card-style .news-item,
+html[data-theme="dark"] .content-section.card-style .publication {
+  color: var(--global-text-color);
+}
+
+// Add light background to all images in dark mode
+html[data-theme="dark"] img {
+  background-color: #{$white-color}; // Use a fixed white color for the background
+  // Optional: add a small padding if needed to prevent content touching the edge
+  // padding: 5px;
+}
