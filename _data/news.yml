@@ -1,4 +1,8 @@
 items:
+  - date: 2025-06-25
+    content: >
+      Our paper "Voyaging into Unbounded Dynamic Scenes from a Single View" is accepted to {ICCV 2025}!
+
   - date: 2025-05-01
     content: >
       Our paper "Gradient Flow Provably Learns Robust Classifiers for Orthonormal GMMs" is accepted to {ICML 2025}! See you in Vancouver!

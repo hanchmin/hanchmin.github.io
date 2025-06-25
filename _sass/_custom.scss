@@ -1,0 +1,74 @@
+// In _sass/_custom_projects.scss (or your chosen custom SASS file)
+
+// Container for each project entry within <details>
+.project-entry {
+  // overflow: hidden; // Add this if you stick with float and need a clearfix
+  display: flex; // Modern way to handle image and text side-by-side
+  flex-wrap: wrap; // Allow items to wrap on smaller screens
+  gap: 15px; // Space between image and text, and between items if they wrap
+  padding-top: 0.5em; // Space after the <summary>
+  padding-bottom: 1em; // Space before the next <details> or end of section
+}
+
+// Container for the project thumbnail image
+.project-thumbnail-container {
+  flex-basis: 45%; // Desired width, e.g., 45% of the .project-entry
+  max-width: 300px; // Maximum width for the image container
+  min-width: 200px; // Minimum width before text wraps below
+  margin-bottom: 10px; // Space below image if text wraps
+
+  img {
+    width: 100%; // Make image fill its container
+    height: auto; // Maintain aspect ratio
+    border-radius: 4px; // Optional: for slightly rounded corners
+    display: block; // Remove extra space below inline images
+  }
+}
+
+// Container for the project description and related work
+.project-text-container {
+  flex-basis: 50%; // Remaining width
+  flex-grow: 1; // Allow it to take up remaining space
+}
+
+// Styling for paragraphs within the project description
+.project-description p {
+  margin-bottom: 1em; // Consistent bottom margin for paragraphs
+  text-align: justify; // Optional: for justified text
+}
+
+// Styling for the "Related work" heading
+.related-work-heading {
+  font-weight: bold;
+  // text-decoration: underline; // Uncomment if you still want the underline
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.1em; // Slightly larger than normal text but smaller than h3
+}
+
+// Ensure lists under related work have some space
+.project-text-container ul {
+  margin-bottom: 1em;
+  padding-left: 20px; // Standard list indentation
+}
+
+.project-text-container ul li {
+  margin-bottom: 0.5em; // Space between list items
+}
+
+// Responsive adjustments
+@media (max-width: 768px) { // Adjust breakpoint as needed
+  .project-entry {
+    flex-direction: column; // Stack image and text vertically on smaller screens
+  }
+
+  .project-thumbnail-container {
+    flex-basis: 100%; // Image takes full width
+    max-width: 100%; // Allow image to be wider on small screens if desired
+    margin-right: 0; // No right margin when stacked
+  }
+
+  .project-text-container {
+    flex-basis: 100%; // Text takes full width
+  }
+}
