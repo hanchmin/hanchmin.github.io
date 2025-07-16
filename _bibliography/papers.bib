@@ -1,12 +1,24 @@
+@inproceedings{mv25cdc,
+  title={Understanding Incremental Learning with Closed-form Solution to Gradient Flow on Overparamerterized Matrix Factorization},
+  author={Min, Hancheng and Vidal, Ren\'e},
+  booktitle ={IEEE Conference on Decision and Control ({CDC})},
+  year = {2025},
+  recent={true}
+}
+
 @inproceedings{tdlmv2025iccv,
   title={Voyaging into Unbounded Dynamic Scenes from a Single View},
   author={Tian, Fengrui and Ding, Tianjiao and Luo, Jinqi and Min, Hancheng and Vidal, Ren\'e},
-  booktitle={International Conference on Computer Vision ({ICCV})},
-  note = {to appear},
+  booktitle={IEEE International Conference on Computer Vision ({ICCV})},
   year={2025},
+  arxiv = {2507.04183},
   preview = {dymV.gif},
+  code = {https://github.com/tianfr/DynamicVoyager},
+  website = {https://tianfr.github.io/project/DynamicVoyager/index.html},
+  bibtex_show = {true},
   recent={true}
 }
+
 
 
 @InProceedings{mv2025icml,
@@ -15,7 +27,6 @@
   booktitle = {International Conference on Machine Learning ({ICML})},
   pages = {1--8},
   year = {2025},
-  month = {7},
   abstract = {Deep learning-based classifiers are known to be vulnerable to adversarial attacks. Existing methods for defending against such attacks require adding a defense mechanism or modifying the learning procedure (e.g., by adding adversarial examples). This paper shows that for certain data distributions one can learn a provably robust classifier using standard learning methods and without adding a defense mechanism. More specifically, this paper addresses the problem of finding a robust classifier for a binary classification problem in which the data comes from an isotropic mixture of Gaussians with orthonormal cluster centers. First, we characterize the largest $\ell_2$-attack any classifier can defend against while maintaining high accuracy, and show the existence of optimal robust classifiers achieving this maximum $\ell_2$-robustness. Next, we show that given data sampled from the orthonormal Gaussian mixture model, gradient flow on a two-layer network with a polynomial ReLU activation and without adversarial examples provably finds an optimal robust classifier.},
   recent={true},
   pdf = {MV2025ICML.pdf},
@@ -37,16 +48,14 @@
   title = {Concept Lancet: Image Editing with Compositional Representation Transplant},
   author = {Luo, Jinqi and Ding, Tianjiao and Chan, Kwan Ho Ryan and Min, Hancheng and Callison-Burch, Chris and Vidal, Ren\'e},
   year = {2025},
-  month = {6},
-  booktitle = {Conference on Computer Vision and Pattern Recognition ({CVPR})},
+  booktitle = {IEEE\CVF Conference on Computer Vision and Pattern Recognition ({CVPR})},
   abstract = {Diffusion models are widely used for image editing tasks. Existing editing methods often design a representation manipulation procedure (e.g., Cat -> Dog, Sketch -> Painting) by curating an edit direction in the text embedding or score space. However, such a procedure faces a key challenge: overestimating the edit strength harms visual consistency while underestimating it fails the editing task. Notably, each source image may require a different editing strength, and it is costly to search for an appropriate strength via trial-and-error. To address this challenge, we propose ConceptLancent (CoLan), a zero-shot plug-and-play framework for principled representation manipulation in diffusion-based image editing. At inference time, we decompose the source input in the latent (text embedding or diffusion score) space as a sparse linear combination of the representations of the collected visual concepts and phrases. This allows us to accurately estimate the presence of concepts in each image, which informs the edit. Based on the editing task (replace, add, or remove), we perform a customized concept transplant process to impose the corresponding editing direction. To sufficiently model the concept space, we curate a conceptual representation dataset, CoLan 150k, which contains diverse descriptions and scenarios of visual concepts and phrases for the latent dictionary. Experiments on multiple diffusion-based image editing baselines show that methods equipped with CoLan achieve state-of-the-art performance in editing effectiveness and consistency preservation.},
   preview = {colan.png},
   pdf = {LDCMCV2025CVPR.pdf},
   arxiv = {2504.02828},
   code = {https://github.com/peterljq/Concept-Lancet},
   website = {https://peterljq.github.io/project/colan/},
-  bibtex_show = {true},
-  recent={true}
+  bibtex_show = {true}
 }
 
 @InProceedings{xmlmtmv2025aistats,
@@ -54,7 +63,6 @@
   author = {Xu, Ziqing and Min, Hancheng and Luo, Jinqi and MacDonald, Lachlan Ewen and Tarmoun, Salma and Mallada, Enrique and Vidal, Ren\'e},
   booktitle = {International Conference on Artificial Intelligence and Statistics ({AISTATS})},
   year = {2025},
-  month = {4},
   abstract = {Despite Low-Rank Adaptation's (LoRA) empirical success in fine-tuning pretrained models, there is little theoretical understanding of how first-order methods with carefully crafted initialization adapt models to new tasks. In this work, we take the first step towards bridging this gap by theoretically analyzing the learning dynamics of LoRA for matrix factorization (MF) under gradient flow (GF), emphasizing the crucial role of initialization. For small initialization, we theoretically show that GF converges to a neighborhood of the optimal solution, with smaller initialization leading to lower final error. Our analysis shows that the final error is affected by the misalignment between the singular spaces of the model and the target matrix, and reducing the initialization scale improves alignment. To address this misalignment, we propose a spectral initialization for LoRA in MF and theoretically prove that GF with small spectral initialization can converge to the target matrix with arbitrary precision. Numerical experiments from MF and image classification validate our findings.},
   recent={true},
   preview = {lora.png},
@@ -98,7 +106,6 @@
   year = {2024},
   booktitle = {International Conference on Learning Representations ({ICLR})},
   pages = {1-8},
-  month = {5},
   abstract = {This paper studies the problem of training a two-layer ReLU network for binary classification using gradient flow with small initialization. We consider a training dataset with well-separated input vectors: Any pair of input data with the same label are positively correlated, and any pair with different labels are negatively correlated. Our analysis shows that, during the early phase of training, neurons in the first layer try to align with either the positive data or the negative data, depending on its corresponding weight on the second layer. A careful analysis of the neurons' directional dynamics allows us to provide an $\mathcal{O}(\frac{\log n}{\sqrt{\mu}})$ upper bound on the time it takes for all neurons to achieve good alignment with the input data, where $n$ is the number of data points and $\mu$ measures how well the data are separated. After the early alignment phase, the loss converges to zero at a $\mathcal{O}(\frac{1}{t})$ rate, and the weight matrix on the first layer is approximately low-rank. Numerical experiments on the MNIST dataset illustrate our theoretical findings.},
   pdf = {MMV2024ICLR.pdf},
   slides = {true},
@@ -116,7 +123,6 @@
   pages = {24850--24887},
   year = {2023},
   volume = {202},
-  month = {7},
   abstract = {In this paper, we analyze the convergence of gradient flow on a multi-layer linear model with a loss function of the form $f(W_1W_2\cdots W_L)$. We show that when $f$ satisfies the gradient dominance property, proper weight initialization leads to exponential convergence of the gradient flow to a global minimum of the loss. Moreover, the convergence rate depends on two trajectory-specific quantities that are controlled by the weight initialization: the imbalance matrices, which measure the difference between the weights of adjacent layers, and the least singular value of the weight product $W=W_1W_2\cdots W_L$. Our analysis exploits the fact that the gradient of the overparameterized loss can be written as the composition of the non-overparametrized gradient with a time-varying (weight-dependent) linear operator whose smallest eigenvalue controls the convergence rate. The key challenge we address is to derive a uniform lower bound for this time-varying eigenvalue that lead to improved rates for several multi-layer network models studied in the literature.},
   pdf = {MVM2023ICML.pdf},
   slides = {true},
@@ -147,7 +153,6 @@
   pages = {2262--2284},
   year = {2023},
   volume = {206},
-  month = {4},
   abstract = {Recent theoretical analyses of the convergence of gradient descent (GD) to a global minimum for over-parametrized neural networks make strong assumptions on the step size (infinitesimal), the hidden-layer width (infinite), or the initialization (spectral, balanced). In this work, we relax these assumptions and derive a linear convergence rate for two-layer linear networks trained using GD on the squared loss in the case of finite step size, finite width and general initialization. Despite the generality of our analysis, our rate estimates are significantly tighter than those of prior work. Moreover, we provide a time-varying step size rule that monotonically improves the convergence rate as the loss function decreases to zero. Numerical experiments validate our findings.},
   pdf = {XMTMV2023AISTATS.pdf},
   bibtex_show = {true},
@@ -162,7 +167,6 @@
   pages = {1167--1179},
   year = {2023},
   volume = {211},
-  month = {6},
   abstract = {We propose a structure-preserving model-reduction methodology for large-scale dynamic networks with tightly-connected components. First, the coherent groups are identified by a spectral clustering algorithm on the graph Laplacian matrix that models the network feedback. Then, a reduced network is built, where each node represents the aggregate dynamics of each coherent group, and the reduced network captures the dynamic coupling between the groups. We provide an upper bound on the approximation error when the network graph is randomly generated from a weight stochastic block model. Finally, numerical experiments align with and validate our theoretical findings.},
   pdf = {MM2023L4DC.pdf},
   bibtex_show = {true},
@@ -193,7 +197,6 @@
   pages = {7760--7768},
   year = {2021},
   volume = {139},
-  month = {7},
   abstract = {Neural networks trained via gradient descent with random initialization and without any regularization enjoy good generalization performance in practice despite being highly overparametrized. A promising direction to explain this phenomenon is to study how initialization and overparametrization affect convergence and implicit bias of training algorithms. In this paper, we present a novel analysis of single-hidden-layer linear networks trained under gradient flow, which connects initialization, optimization, and overparametrization. Firstly, we show that the squared loss converges exponentially to its optimum at a rate that depends on the level of imbalance of the initialization. Secondly, we show that proper initialization constrains the dynamics of the network parameters to lie within an invariant set. In turn, minimizing the loss over this set leads to the min-norm solution. Finally, we show that large hidden layer width, together with (properly scaled) random initialization, ensures proximity to such an invariant set during training, allowing us to derive a novel non-asymptotic upper-bound on the distance between the trained network and the min-norm solution.},
   pdf = {MTVM2021ICML.pdf},
   bibtex_show = {true},
@@ -217,7 +220,6 @@
   volume = {5},
   pages = {1741-1746},
   year = {2021},
-  month = {11},
   abstract = {We introduce a novel framework to approximate the aggregate frequency dynamics of coherent synchronous generators. By leveraging recent results on dynamics concentration of tightly connected networks, we develop a hierarchy of reduced order models --based on frequency weighted balanced truncation-- that accurately approximate the aggregate system response. Our results outperform existing aggregation techniques and can be shown to monotonically improve the approximation as the hierarchy order increases.},
   pdf = {MPM2021LCSS.pdf},
   bibtex_show = {true},
@@ -233,7 +235,6 @@
   booktitle = {IEEE Conference on Decision and Control ({CDC})},
   pages = {758-763},
   year = {2019},
-  month = {12},
   abstract = {The ability to achieve coordinated behavior --engineered or emergent-- on networked systems has attracted widespread interest over several fields. This has led to remarkable advances on the development of a theoretical understanding of the conditions under which agents within a network can reach agreement (consensus) or develop coordinated behaviors such as synchronization. However, fewer advances have been made toward explaining another commonly observed phenomena in tightly-connected networks systems: output responses of nodes in the networks are almost identical to each other despite heterogeneity in their individual dynamics. In this paper, we leverage tools from high-dimensional probability to provide an initial answer to this phenomena. More precisely, we show that for linear networks of nodal random transfer functions, as the networks size and connectivity grows, every node in the network follows the same response to an input or disturbance -- irrespectively of the source of this input. We term this behavior as dynamics concentration as it stems from the fact that the network transfer matrix uniformly converges in probability to a unique dynamic response --i.e., it concentrates-- determined by the distribution of the random transfer function of each node. We further discuss the implications of our analysis in the context of model reduction and robustness, and provide numerical evidence that similar phenomena occur in small deterministic networks over a properly defined frequency band.},
   pdf = {MM2019CDC.pdf},
   bibtex_show = {true},
@@ -265,7 +266,6 @@ year = {2023}
   booktitle = {IEEE International Conference on Robotics and Automation ({ICRA})},
   pages = {5062-5069},
   year = {2018},
-  month = {May},
   bibtex_show = {true}
 }
 
@@ -276,7 +276,6 @@ year = {2023}
   volume = {68},
   pages = {2979-2994},
   year = {2023},
-  month = {5},
   abstract = {This paper aims to put forward the concept that learning to take safe actions in unknown environments, even with probability one guarantees, can be achieved without the need for an unbounded number of exploratory trials, provided that one is willing to navigate trade-offs between optimality, level of exposure to unsafe events, and the maximum detection time of unsafe actions. We illustrate this concept in two complementary settings. We first focus on the canonical multi-armed bandit problem and seek to study the intrinsic trade-offs of learning safety in the presence of uncertainty.  Under mild assumptions on sufficient exploration, we provide an algorithm that provably detects all unsafe machines in an (expected) finite number of rounds. The analysis also unveils a trade-off between the number of rounds needed to secure the environment and the probability of discarding safe machines.  We then consider the problem of finding optimal policies for a Markov Decision Process (MDP) with almost sure constraints. 
     We show that the (action) value function satisfies a barrier-based decomposition which allows for the identification of feasible policies independently of the reward process. Using this decomposition, we develop a Barrier-learning algorithm, that identifies such unsafe state-action pairs in a finite expected number of steps. Our analysis further highlights a trade-off between the time lag for the underlying MDP necessary to detect unsafe actions, and the level of exposure to unsafe events. Simulations corroborate our theoretical findings, further illustrating the aforementioned trade-offs, and suggesting that safety constraints can further speed up the learning process.},
   pdf = {CMBM2023TAC.pdf},
@@ -293,7 +292,6 @@ year = {2023}
   pages = {559--570},
   year = {2022},
   volume = {168},
-  month = {6},
   abstract = {In this work we address the problem of finding feasible policies for Constrained Markov Decision Processes under probability one constraints. We argue that stationary policies are not sufficient for solving this problem, and that a rich class of policies can be found by endowing the controller with a scalar quantity, so called budget, that tracks how close the agent is to violating the constraint. We show that the minimal budget required to act safely can be obtained as the smallest fixed point of a Bellman-like operator, for which we analyze its convergence properties. We also show how to learn this quantity when the true kernel of the Markov decision process is not known, while providing sample-complexity bounds. The utility of knowing this minimal budget relies in that it can aid in the search of optimal or near-optimal policies by shrinking down the region of the state space the agent must navigate. Simulations illustrate the different nature of probability one constraints against the typically used constraints in expectation.},
   pdf = {CMBM2022L4DC.pdf},
   bibtex_show = {true},

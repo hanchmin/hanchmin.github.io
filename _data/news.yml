@@ -1,4 +1,8 @@
 items:
+  - date: 2025-07-16
+    content: >
+      Our paper "Understanding Incremental Learning with Closed-form Solution to Gradient Flow on Overparamerterized Matrix Factorization" is accepted to {CDC 2025}!
+
   - date: 2025-06-25
     content: >
       Our paper "Voyaging into Unbounded Dynamic Scenes from a Single View" is accepted to {ICCV 2025}!
