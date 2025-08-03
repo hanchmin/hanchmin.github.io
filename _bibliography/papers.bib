@@ -1,25 +1,27 @@
-@inproceedings{mv25cdc,
+@inproceedings{mv2025cdc,
   title={Understanding Incremental Learning with Closed-form Solution to Gradient Flow on Overparamerterized Matrix Factorization},
   author={Min, Hancheng and Vidal, Ren\'e},
   booktitle ={IEEE Conference on Decision and Control ({CDC})},
   year = {2025},
+  abstract = {Many theoretical studies on neural networks attribute their excellent empirical performance to the implicit bias or regularization induced by first-order optimization algorithms when training networks under certain initialization assumptions. One example is the incremental learning phenomenon in gradient flow (GF) on an overparamerterized matrix factorization problem with small initialization: GF learns a target matrix by sequentially learning its singular values in decreasing order of magnitude over time. In this paper, we develop a quantitative understanding of this incremental learning behavior for GF on the symmetric matrix factorization problem, using its closed-form solution obtained by solving a Riccati-like matrix differential equation. We show that incremental learning emerges from some time-scale separation among dynamics corresponding to learning different components in the target matrix. By decreasing the initialization scale, these time-scale separations become more prominent, allowing one to find low-rank approximations of the target matrix. Lastly, we discuss the possible avenues for extending this analysis to asymmetric matrix factorization problems.},
+  preview = {sv_dym.png},
   recent={true}
 }
 
 @inproceedings{tdlmv2025iccv,
-  title={Voyaging into Unbounded Dynamic Scenes from a Single View},
+  title={Voyaging into Perpetual Dynamic Scenes from a Single View},
   author={Tian, Fengrui and Ding, Tianjiao and Luo, Jinqi and Min, Hancheng and Vidal, Ren\'e},
   booktitle={IEEE International Conference on Computer Vision ({ICCV})},
   year={2025},
   arxiv = {2507.04183},
+  pdf = {TDLMV2025ICCV.pdf},
   preview = {dymV.gif},
+  abstract = {The problem of generating a perpetual dynamic scene from a single view is an important problem with widespread applications in augmented and virtual reality, and robotics. However, since dynamic scenes regularly change over time, a key challenge is to ensure that different generated views be consistent with the underlying 3D motions. Prior work learns such consistency by training on multiple views, but the generated scene regions often interpolate between training views and fail to generate perpetual views. To address this issue, we propose \ourframework, which reformulates dynamic scene generation as a scene outpainting problem with new dynamic content. As 2D outpainting models struggle at generating 3D consistent motions from a single 2D view, we enrich 2D pixels with information from their 3D rays that facilitates learning of 3D motion consistency. More specifically, we first map the single-view video input to a dynamic point cloud using the estimated video depths. We then render a partial video of the point cloud from a novel view and outpaint the missing regions using ray information (e.g., the distance from a ray to the point cloud) to generate 3D consistent motions. Next, we use the outpainted video to update the point cloud, which is used for outpainting the scene from future novel views. Moreover, we can control the generated content with the input text prompt. Experiments show that our model can generate perpetual scenes with consistent motions along fly-through cameras.},
   code = {https://github.com/tianfr/DynamicVoyager},
   website = {https://tianfr.github.io/project/DynamicVoyager/index.html},
   bibtex_show = {true},
   recent={true}
 }
-
-
 
 @InProceedings{mv2025icml,
   title = {Gradient Flow Provably Learns Robust Classifiers for Orthonormal GMMs},
@@ -36,10 +38,14 @@
   bibtex_show = {true}
 }
 
-@article{xmtmv25tmlr,
+@article{xmtmv2025tmlr,
   title={A Local Polyak-łOjasiewicz and Descent Lemma of Gradient Descent for Overparameterized Linear Models},
   author={Xu, Ziqing and Min, Hancheng and Tarmoun, Salma and Mallada, Enrique and Vidal, Rene},
   year={2025},
+  arxiv = {2505.11664},
+  pdf = {XMTMV2025TMLR.pdf},
+  abstract = {Most prior work on the convergence of gradient descent (GD) for overparameterized neural networks relies on strong assumptions on the step size (infinitesimal), the hidden-layer width (infinite), or the initialization (large, spectral, balanced). Recent efforts to relax these assumptions focus on two-layer linear networks trained with the squared loss.
+              In this work, we derive a linear convergence rate for training two-layer linear neural networks with GD for general losses and under relaxed assumptions on the step size, width, and initialization. A key challenge in deriving this result is that classical ingredients for deriving convergence rates for nonconvex problems, such as the Polyak-Łojasiewicz (PL) condition and Descent Lemma, do not hold globally for overparameterized neural networks. Here, we prove that these two conditions hold locally with local constants that depend on the weights. Then, we provide bounds on these local constants, which depend on the initialization of the weights, the current loss, and the global PL and smoothness constants of the non-overparameterized model. Based on these bounds, we derive a linear convergence rate for GD. Our convergence analysis not only improves upon prior results but also suggests a better choice for the step size, as verified through our numerical experiments.},
   journal = {Transactions on Machine Learning Research ({TMLR})}
 }
 
@@ -86,7 +92,7 @@
   bibtex_show = {true}
 }
 
-@article{jmz24pscc,
+@article{jmz2024pscc,
   title = {Oscillations-aware Frequency Security Assessment via Efficient Worst-case Frequency Nadir Computation},
   author = {Yan Jiang and Hancheng Min and Baosen Zhang},
   journal = {Electric Power Systems Research ({EPSR})},
