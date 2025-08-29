@@ -1,4 +1,8 @@
 items:
+  - date: 2025-08-29
+    content: >
+      I officially joined INS and SMS at Shanghai Jiao Tong University!
+      
   - date: 2025-07-16
     content: >
       Our paper "Understanding Incremental Learning with Closed-form Solution to Gradient Flow on Overparamerterized Matrix Factorization" is accepted to {CDC 2025}!
