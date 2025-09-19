@@ -1,4 +1,8 @@
 items:
+  - date: 2025-09-18
+    content: >
+      Our papers "Neural Collapse under Gradient Flow on Shallow ReLU Networks for Orthogonally Separable Data" and "Convergence Rates for Gradient Descent on the Edge of Stability for Overparametrised Least Squares" are accepted to {NeurIPS 2025}!
+
   - date: 2025-08-29
     content: >
       I officially joined INS and SMS at Shanghai Jiao Tong University!

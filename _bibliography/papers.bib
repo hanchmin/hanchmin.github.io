@@ -1,3 +1,31 @@
+@InProceedings{mzv2025neurips,
+  title={Neural Collapse under Gradient Flow on Shallow ReLU Networks for Orthogonally Separable Data},
+  author={Min, Hancheng and Zhu, Zhihui and Vidal, Ren\'e},
+  booktitle = {Conference on Neural Information Processing Systems (NeurIPS)},
+  abstract = {Among many mysteries behind the success of deep networks lies the exceptional discriminative power of their learned representations as manifested by the intriguing Neural Collapse (NC) phenomenon, where simple feature structures emerge in the last layer of a trained neural network. Prior work on understanding NC theoretically has focused on analyzing the optimization landscape of matrix-factorization-like problems by considering the last-layer features as unconstrained free optimization variables and showing that their global minima exhibit NC. In this paper, we show that gradient flow on a two-layer ReLU network for classifying orthogonally separable data provably exhibits NC, thereby advancing prior results in two ways: First, we relax the assumption of unconstrained features, showing the effect of data structure and nonlinear activations on NC characterizations. Second, we reveal the role of the implicit bias of the training dynamics in facilitating the emergence of NC.},
+  year = {2025},
+  month = {12},
+  preview = {nc.png},
+  recent = {true},
+  note = {to appear},
+  selected = {true},
+  author+an = {1=highlight},
+}
+
+
+@InProceedings{mpxmtv2025neurips,
+  title={Convergence Rates for Gradient Descent on the Edge of Stability for Overparametrised Least Squares},
+  author={MacDonald, Lachlan E. and Palma, Leandro and Xu, Ziqing and Min, Hancheng and Tarmoun Salma and Vidal, Ren\'e},
+  booktitle = {Conference on Neural Information Processing Systems (NeurIPS)},
+  abstract = {Classical optimisation theory guarantees monotonic objective decrease for gradient descent (GD) when employed in a small step size, or "stable", regime. In contrast, gradient descent on neural networks is frequently performed in a large step size regime called the "edge of stability", in which the objective decreases non-monotonically with an observed implicit bias towards flat minima. In this paper, we take a step toward quantifying this phenomenon by providing convergence rates for gradient descent with large learning rates in an overparametrised least squares setting. The key insight behind our analysis is that, as a consequence of overparametrisation, the set of global minimisers forms a Riemannian manifold $M$, which enables the decomposition of the GD dynamics into components parallel and orthogonal to $M$. The parallel component corresponds to Riemannian gradient descent on the objective sharpness, while the orthogonal component corresponds to a quadratic dynamical system. This insight allows us to derive rates in three regimes characterised by the learning rate size: the subcritical regime, in which transient instability is overcome in finite time before linear convergence to a suboptimally flat global minimum; the critical regime, in which instability persists for all time with a power-law convergence toward the optimally flat global minimum; the supercritical regime, in which instability persists for all time with linear convergence to an oscillation of period two centred on the optimally flat global minimum.},
+  year = {2025},
+  month = {12},
+  note = {to appear},
+  recent = {true},
+  preview = {eos.png},
+  author+an = {4=highlight},
+}
+
 @inproceedings{mv2025cdc,
   title={Understanding Incremental Learning with Closed-form Solution to Gradient Flow on Overparamerterized Matrix Factorization},
   author={Min, Hancheng and Vidal, Ren\'e},
@@ -22,8 +50,7 @@
   abstract = {The problem of generating a perpetual dynamic scene from a single view is an important problem with widespread applications in augmented and virtual reality, and robotics. However, since dynamic scenes regularly change over time, a key challenge is to ensure that different generated views be consistent with the underlying 3D motions. Prior work learns such consistency by training on multiple views, but the generated scene regions often interpolate between training views and fail to generate perpetual views. To address this issue, we propose \ourframework, which reformulates dynamic scene generation as a scene outpainting problem with new dynamic content. As 2D outpainting models struggle at generating 3D consistent motions from a single 2D view, we enrich 2D pixels with information from their 3D rays that facilitates learning of 3D motion consistency. More specifically, we first map the single-view video input to a dynamic point cloud using the estimated video depths. We then render a partial video of the point cloud from a novel view and outpaint the missing regions using ray information (e.g., the distance from a ray to the point cloud) to generate 3D consistent motions. Next, we use the outpainted video to update the point cloud, which is used for outpainting the scene from future novel views. Moreover, we can control the generated content with the input text prompt. Experiments show that our model can generate perpetual scenes with consistent motions along fly-through cameras.},
   code = {https://github.com/tianfr/DynamicVoyager},
   website = {https://tianfr.github.io/project/DynamicVoyager/index.html},
-  bibtex_show = {true},
-  recent={true}
+  bibtex_show = {true}
 }
 
 @InProceedings{mv2025icml,
@@ -73,7 +100,6 @@
   booktitle = {International Conference on Artificial Intelligence and Statistics ({AISTATS})},
   year = {2025},
   abstract = {Despite Low-Rank Adaptation's (LoRA) empirical success in fine-tuning pretrained models, there is little theoretical understanding of how first-order methods with carefully crafted initialization adapt models to new tasks. In this work, we take the first step towards bridging this gap by theoretically analyzing the learning dynamics of LoRA for matrix factorization (MF) under gradient flow (GF), emphasizing the crucial role of initialization. For small initialization, we theoretically show that GF converges to a neighborhood of the optimal solution, with smaller initialization leading to lower final error. Our analysis shows that the final error is affected by the misalignment between the singular spaces of the model and the target matrix, and reducing the initialization scale improves alignment. To address this misalignment, we propose a spectral initialization for LoRA in MF and theoretically prove that GF with small spectral initialization can converge to the target matrix with arbitrary precision. Numerical experiments from MF and image classification validate our findings.},
-  recent={true},
   preview = {lora.png},
   arxiv = {2503.06982},
   pdf = {XMMLTMV2025AISTATS.pdf},
@@ -290,7 +316,6 @@ year = {2023}
   pdf = {CMBM2023TAC.pdf},
   preview = {safe_rl.png},
   bibtex_show = {true},
-  selected = {true},
   doi = {10.1109/TAC.2023.3240925}
 }
 
