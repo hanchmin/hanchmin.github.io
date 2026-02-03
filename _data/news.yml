@@ -1,4 +1,12 @@
 items:
+  - date: 2025-12-10
+    content: >
+      I gave a talk "Understanding Incremental Learning with Closed-form Solution to Gradient Flow on Overparamerterized Matrix Factorization" at CDC 2025 at Rio
+
+  - date: 2025-11-23
+    content: >
+      I gave a talk "Learning Dynamics in the Feature Learning Regime: Implicit Bias, Neural Collapse, and Robustness" at NYU, Shanghai
+
   - date: 2025-09-18
     content: >
       Our papers "Neural Collapse under Gradient Flow on Shallow ReLU Networks for Orthogonally Separable Data" and "Convergence Rates for Gradient Descent on the Edge of Stability for Overparametrised Least Squares" have been accepted to {NeurIPS 2025}!
