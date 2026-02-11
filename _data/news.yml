@@ -1,4 +1,8 @@
 items:
+  - date: 2026-02-11
+    content: >
+      Our tutorial paper "On the Convergence, Implicit Bias and Edge of Stability of Gradient Descent in Deep Learning" has been accepted to {IEEE Signal Processing Magazine}!
+
   - date: 2025-12-10
     content: >
       I gave a talk "Understanding Incremental Learning with Closed-form Solution to Gradient Flow on Overparamerterized Matrix Factorization" at CDC 2025 at Rio
