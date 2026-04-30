@@ -1,4 +1,8 @@
 items:
+  - date: 2026-05-01
+    content: >
+      Our paper "Transformers Learn the Optimal DDPM Denoiser for Multi-Token GMMs" is accepted to {ICML 2026}!
+
   - date: 2026-02-11
     content: >
       Our tutorial paper "On the Convergence, Implicit Bias and Edge of Stability of Gradient Descent in Deep Learning" has been accepted to {IEEE Signal Processing Magazine}!
