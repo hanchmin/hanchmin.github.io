@@ -1,4 +1,8 @@
 items:
+  - date: 2026-05-31
+    content: >
+      I gave a talk "Slow Coherency, Aggregation and Clustering in Networked Systems" at Green Control Workshop 2026 at Peking University
+
   - date: 2026-05-01
     content: >
       Our paper "Transformers Learn the Optimal DDPM Denoiser for Multi-Token GMMs" is accepted to {ICML 2026}!

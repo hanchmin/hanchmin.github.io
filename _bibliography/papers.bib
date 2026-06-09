@@ -2,10 +2,14 @@
   title={Transformers Learn the Optimal {DDPM} Denoiser for Multi-Token {GMM}s},
   author={Li, Hongkang and Min, Hancheng and Vidal, Ren\'e},
   booktitle = {International Conference on Machine Learning ({ICML})},
+  abstract = {Transformer-based diffusion models have demonstrated remarkable performance at generating high-quality samples. However, our theoretical understanding of the reasons for this success remains limited. For instance, existing models are typically trained by minimizing a denoising objective, which is equivalent to fitting the score function of the training data. However, we do not know why transformer-based models can match the score function for denoising, or why gradient-based methods converge to the optimal denoising model despite the non-convex loss landscape. To the best of our knowledge, this paper provides the first convergence analysis for training transformer-based diffusion models. More specifically, we consider the population Denoising Diffusion Probabilistic Model (DDPM) objective for denoising data that follow a multi-token Gaussian mixture distribution. We theoretically quantify the required number of tokens per data point and training iterations for the global convergence towards the Bayes optimal risk of the denoising objective, thereby achieving a desired score matching error. A deeper investigation reveals that the self-attention module of the trained transformer implements a mean denoising mechanism that enables the trained model to approximate the oracle Minimum Mean Squared Error (MMSE) estimator of the injected noise in the diffusion steps. Numerical experiments validate these findings.},
   year = {2026},
   month = {7},
   recent = {true},
-  note = {to appear}
+  pdf = {LMV2026ICML.pdf},
+  preview = {mechanism.png},
+  arxiv = {2604.10074},
+  bibtex_show = {true}
 }
 
 @article{mmv26spm,
@@ -15,6 +19,8 @@
   note = {To appear},
   month = {5},
   year = {2026},
+  pdf = {MMV2026SPM.pdf},
+  selected = {true},
   recent = {true}
 }
 
@@ -67,7 +73,6 @@
   year={2025},
   arxiv = {2507.04183},
   pdf = {TDLMV2025ICCV.pdf},
-  preview = {dymV.gif},
   abstract = {The problem of generating a perpetual dynamic scene from a single view is an important problem with widespread applications in augmented and virtual reality, and robotics. However, since dynamic scenes regularly change over time, a key challenge is to ensure that different generated views be consistent with the underlying 3D motions. Prior work learns such consistency by training on multiple views, but the generated scene regions often interpolate between training views and fail to generate perpetual views. To address this issue, we propose \ourframework, which reformulates dynamic scene generation as a scene outpainting problem with new dynamic content. As 2D outpainting models struggle at generating 3D consistent motions from a single 2D view, we enrich 2D pixels with information from their 3D rays that facilitates learning of 3D motion consistency. More specifically, we first map the single-view video input to a dynamic point cloud using the estimated video depths. We then render a partial video of the point cloud from a novel view and outpaint the missing regions using ray information (e.g., the distance from a ray to the point cloud) to generate 3D consistent motions. Next, we use the outpainted video to update the point cloud, which is used for outpainting the scene from future novel views. Moreover, we can control the generated content with the input text prompt. Experiments show that our model can generate perpetual scenes with consistent motions along fly-through cameras.},
   code = {https://github.com/tianfr/DynamicVoyager},
   website = {https://tianfr.github.io/project/DynamicVoyager/index.html},
@@ -198,8 +203,7 @@
   abstract = {Network coherence generally refers to the emergence of simple aggregated dynamical behaviours, despite heterogeneity in the dynamics of the subsystems that constitute the network. In this paper, we develop a general frequency domain framework to analyze and quantify the level of network coherence that a system exhibits by relating coherence with a low-rank property of the system's input-output response. More precisely, for a networked system with linear dynamics and coupling, we show that, as the network's \emph{effective algebraic connectivity} grows, the system transfer matrix converges to a rank-one transfer matrix representing the coherent behavior. Interestingly, the non-zero eigenvalue of such a rank-one matrix is given by the harmonic mean of individual nodal dynamics, and we refer to it as the coherent dynamics. Our analysis unveils the frequency-dependent nature of coherence and a non-trivial interplay between dynamics and network topology. We further show that many networked systems can exhibit similar coherent behavior by establishing a concentration result in a setting with randomly chosen individual nodal dynamics.},
   preview = {coherence.gif},
   arxiv = {2302.08438},
-  bibtex_show = {true},
-  selected = {true}
+  bibtex_show = {true}
 }
 
 @InProceedings{xu2023aistat,
