@@ -1,4 +1,8 @@
 items:
+  - date: 2026-06-18
+    content: >
+      Our paper "Dynamic World Generation Made Efficient" is accepted to {ECCV 2026}!
+
   - date: 2026-05-31
     content: >
       I gave a talk "Slow Coherency, Aggregation and Clustering in Networked Systems" at Green Control Workshop 2026 at Peking University
