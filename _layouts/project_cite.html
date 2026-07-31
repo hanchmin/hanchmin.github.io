@@ -1,0 +1,57 @@
+---
+---
+<!-- _layouts/project_cite.html -->
+<!-- Compact citation for the projects page "Related work" lists.
+     Renders authors, quoted title, venue+year+vol/pp, then text links.
+     [URL] = entry.html if present, else arxiv; omitted if neither.
+     Other links appear iff the corresponding bib field exists (same field-driven
+     logic as _layouts/bib.html, but as compact [LABEL] text links). -->
+<span class="project-cite">
+  {% include bib_authors.liquid no_links=true %}, “<i>{{ entry.title }}</i>,”
+  {%- comment %}venue + year{% endcomment -%}
+  {% assign proceedings = "inproceedings,incollection" | split: ',' %}
+  {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ',' %}
+  {%- if entry.type == "article" -%}
+  in <i>{{ entry.journal }}</i>
+  {%- elsif proceedings contains entry.type -%}
+  in <i>{{ entry.booktitle }}</i>
+  {%- elsif thesis contains entry.type -%}
+  <i>{{ entry.school }}</i>
+  {%- endif -%}
+  {%- if entry.year %}, {{ entry.year }}{% endif -%}
+  {%- if entry.volume %}, vol. {{ entry.volume }}{% endif -%}
+  {%- if entry.number %}, no. {{ entry.number }}{% endif -%}
+  {%- if entry.pages %}, pp. {{ entry.pages }}{% endif -%}
+  .
+
+  {%- comment %}links: [URL] (html|arxiv), [PDF], [POSTER], [SLIDES], [CODE]{% endcomment -%}
+  {%- assign cite_url = nil -%}
+  {%- if entry.html -%}
+  {%- assign cite_url = entry.html -%}
+  {%- elsif entry.arxiv -%}
+  {%- assign cite_url = 'http://arxiv.org/abs/' | append: entry.arxiv -%}
+  {%- endif -%}
+  {%- if cite_url %} <a href="{{ cite_url }}">[URL]</a>{%- endif -%}
+  {%- if entry.pdf %}
+  {%- if entry.pdf contains '://' -%}
+   <a href="{{ entry.pdf }}">[PDF]</a>
+  {%- else -%}
+   <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" rel="external nofollow noopener" target="_blank">[PDF]</a>
+  {%- endif -%}
+  {%- endif -%}
+  {%- if entry.poster %}
+  {%- if entry.poster contains '://' -%}
+   <a href="{{ entry.poster }}">[POSTER]</a>
+  {%- else -%}
+   <a href="{{ entry.pdf | prepend: '/assets/posters/' | relative_url }}" rel="external nofollow noopener" target="_blank">[POSTER]</a>
+  {%- endif -%}
+  {%- endif -%}
+  {%- if entry.slides %}
+  {%- if entry.slides contains '://' -%}
+   <a href="{{ entry.slides }}">[SLIDES]</a>
+  {%- else -%}
+   <a href="{{ entry.pdf | prepend: '/assets/slides/' | relative_url }}" rel="external nofollow noopener" target="_blank">[SLIDES]</a>
+  {%- endif -%}
+  {%- endif -%}
+  {%- if entry.code %} <a href="{{ entry.code }}">[CODE]</a>{%- endif -%}
+</span>

@@ -3,7 +3,10 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-.DS_store
+.DS_Store
+.lighthouse_results
+.idea/
+output.txt
 .ruby-version
 .tweet-cache
 Gemfile.lock

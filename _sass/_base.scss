@@ -529,6 +529,26 @@ footer.sticky-bottom {
     text-align: right;
     text-font: bold;
   }
+
+  // jekyll-scholar wraps each {% bibliography %} call in <ol class="bibliography">.
+  // The .publications-scoped suppression above does not reach the projects page,
+  // so suppress the decimal numbering here to match the publications page.
+  ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  // On the projects page the self-author (H. Min) is wrapped in <em> by the
+  // shared author include; render it bold rather than italic/underlined.
+  .project-cite em {
+    font-style: normal;
+    font-weight: bold;
+  }
 }
 
 
