@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: hanchmin.github.io/sitemap.xml
+Sitemap: https://hanchmin.github.io/sitemap.xml
