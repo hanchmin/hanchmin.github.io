@@ -8,7 +8,7 @@
     note = {to appear}
 }
 
-@InProceedings{lmv26icml,
+@InProceedings{lmv2026icml,
   title={Transformers Learn the Optimal {DDPM} Denoiser for Multi-Token {GMM}s},
   author={Li, Hongkang and Min, Hancheng and Vidal, Ren\'e},
   booktitle = {International Conference on Machine Learning ({ICML})},
@@ -17,12 +17,12 @@
   month = {7},
   recent = {true},
   pdf = {LMV2026ICML.pdf},
-  preview = {mechanism.png},
+  preview = {LMV2026ICML.png},
   arxiv = {2604.10074},
   bibtex_show = {true}
 }
 
-@article{mmv26spm,
+@article{mmv2026spm,
   title={On the Convergence, Implicit Bias and Edge of Stability of Gradient Descent in Deep Learning},
   author={Min, Hancheng and MacDonald, Lachlan E. and Vidal, Ren\'e},
   journal = {IEEE Signal Processing Magazine (IEEE SPM)},
@@ -31,7 +31,7 @@
   volume= {43},
   number= {3},
   pages= {37-51},
-  preview = {math_dl.png},
+  preview = {MMV2026SPM.png},
   pdf = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11561020},
   selected = {true},
   bibtex_show = {true},
@@ -44,7 +44,7 @@
   booktitle = {Conference on Neural Information Processing Systems (NeurIPS)},
   abstract = {Among many mysteries behind the success of deep networks lies the exceptional discriminative power of their learned representations as manifested by the intriguing Neural Collapse (NC) phenomenon, where simple feature structures emerge in the last layer of a trained neural network. Prior work on understanding NC theoretically has focused on analyzing the optimization landscape of matrix-factorization-like problems by considering the last-layer features as unconstrained free optimization variables and showing that their global minima exhibit NC. In this paper, we show that gradient flow on a two-layer ReLU network for classifying orthogonally separable data provably exhibits NC, thereby advancing prior results in two ways: First, we relax the assumption of unconstrained features, showing the effect of data structure and nonlinear activations on NC characterizations. Second, we reveal the role of the implicit bias of the training dynamics in facilitating the emergence of NC.},
   year = {2025},
-  preview = {nc.png},
+  preview = {MZV2025NeurIPS.png},
   recent = {true},
   pdf = {MZV2025NeurIPS.pdf},
   poster = {true},
@@ -62,7 +62,7 @@
   year = {2025},
   arxiv = {2510.17506},
   bibtex_show = {true},
-  preview = {eos.png}
+  preview = {MPXMTV2025NeurIPS.png}
 }
 
 @inproceedings{mv2025cdc,
@@ -71,7 +71,7 @@
   booktitle ={IEEE Conference on Decision and Control ({CDC})},
   year = {2025},
   abstract = {Many theoretical studies on neural networks attribute their excellent empirical performance to the implicit bias or regularization induced by first-order optimization algorithms when training networks under certain initialization assumptions. One example is the incremental learning phenomenon in gradient flow (GF) on an overparamerterized matrix factorization problem with small initialization: GF learns a target matrix by sequentially learning its singular values in decreasing order of magnitude over time. In this paper, we develop a quantitative understanding of this incremental learning behavior for GF on the symmetric matrix factorization problem, using its closed-form solution obtained by solving a Riccati-like matrix differential equation. We show that incremental learning emerges from some time-scale separation among dynamics corresponding to learning different components in the target matrix. By decreasing the initialization scale, these time-scale separations become more prominent, allowing one to find low-rank approximations of the target matrix. Lastly, we discuss the possible avenues for extending this analysis to asymmetric matrix factorization problems.},
-  preview = {sv_dym.png},
+  preview = {MV2025CDC.png},
   arxiv = {2508.20344},
   slides = {true},
   pdf = {MV2025CDC.pdf},
@@ -103,7 +103,7 @@
   recent={true},
   pdf = {MV2025ICML.pdf},
   poster={true},
-  preview={robust_gmm.png},
+  preview={MV2025ICML.png},
   selected={true},
   bibtex_show = {true}
 }
@@ -126,7 +126,7 @@
   year = {2025},
   booktitle = {IEEE\CVF Conference on Computer Vision and Pattern Recognition ({CVPR})},
   abstract = {Diffusion models are widely used for image editing tasks. Existing editing methods often design a representation manipulation procedure (e.g., Cat -> Dog, Sketch -> Painting) by curating an edit direction in the text embedding or score space. However, such a procedure faces a key challenge: overestimating the edit strength harms visual consistency while underestimating it fails the editing task. Notably, each source image may require a different editing strength, and it is costly to search for an appropriate strength via trial-and-error. To address this challenge, we propose ConceptLancent (CoLan), a zero-shot plug-and-play framework for principled representation manipulation in diffusion-based image editing. At inference time, we decompose the source input in the latent (text embedding or diffusion score) space as a sparse linear combination of the representations of the collected visual concepts and phrases. This allows us to accurately estimate the presence of concepts in each image, which informs the edit. Based on the editing task (replace, add, or remove), we perform a customized concept transplant process to impose the corresponding editing direction. To sufficiently model the concept space, we curate a conceptual representation dataset, CoLan 150k, which contains diverse descriptions and scenarios of visual concepts and phrases for the latent dictionary. Experiments on multiple diffusion-based image editing baselines show that methods equipped with CoLan achieve state-of-the-art performance in editing effectiveness and consistency preservation.},
-  preview = {colan.png},
+  preview = {LDCMCV2025CVPR.png},
   pdf = {LDCMCV2025CVPR.pdf},
   arxiv = {2504.02828},
   code = {https://github.com/peterljq/Concept-Lancet},
@@ -140,9 +140,9 @@
   booktitle = {International Conference on Artificial Intelligence and Statistics ({AISTATS})},
   year = {2025},
   abstract = {Despite Low-Rank Adaptation's (LoRA) empirical success in fine-tuning pretrained models, there is little theoretical understanding of how first-order methods with carefully crafted initialization adapt models to new tasks. In this work, we take the first step towards bridging this gap by theoretically analyzing the learning dynamics of LoRA for matrix factorization (MF) under gradient flow (GF), emphasizing the crucial role of initialization. For small initialization, we theoretically show that GF converges to a neighborhood of the optimal solution, with smaller initialization leading to lower final error. Our analysis shows that the final error is affected by the misalignment between the singular spaces of the model and the target matrix, and reducing the initialization scale improves alignment. To address this misalignment, we propose a spectral initialization for LoRA in MF and theoretically prove that GF with small spectral initialization can converge to the target matrix with arbitrary precision. Numerical experiments from MF and image classification validate our findings.},
-  preview = {lora.png},
+  preview = {XMLMTMV2025AISTATS.png},
   arxiv = {2503.06982},
-  pdf = {XMMLTMV2025AISTATS.pdf},
+  pdf = {XMLMTMV2025AISTATS.pdf},
   bibtex_show = {true}
 }
 
@@ -158,12 +158,12 @@
   pdf = {MV2024ICML.pdf},
   poster = {true},
   code = {https://github.com/hanchmin/pReLU_ICML24},
-  preview = {prelu.gif},
+  preview = {MV2024ICML.gif},
   arxiv = {2405.15942},
   bibtex_show = {true}
 }
 
-@article{jmz2024pscc,
+@article{jmz2024epsr,
   title = {Oscillations-aware Frequency Security Assessment via Efficient Worst-case Frequency Nadir Computation},
   author = {Yan Jiang and Hancheng Min and Baosen Zhang},
   journal = {Electric Power Systems Research ({EPSR})},
@@ -171,9 +171,9 @@
   pages = {110656},
   year = {2024},
   abstract = {Frequency security assessment following major disturbances has long been one of the central tasks in power system operations. The standard approach is to study the center of inertia frequency, an aggregate signal for an entire system, to avoid analyzing the frequency signal at individual buses. However, as the amount of low-inertia renewable resources in a grid increases, the center of inertia frequency is becoming too coarse to provide reliable frequency security assessment. In this paper, we propose an efficient algorithm to determine the worst-case frequency nadir across all buses for bounded power disturbances, as well as identify the power disturbances leading to that severest scenario. The proposed algorithm allows oscillations-aware frequency security assessment without conducting exhaustive simulations and intractable analysis.},
-  pdf = {JMZ2024PSCC.pdf},
+  pdf = {JMZ2024EPSR.pdf},
   arxiv = {2402.16765},
-  preview = {freq_osc.png},
+  preview = {JMZ2024EPSR.png},
   bibtex_show = {true}
 }
 
@@ -188,7 +188,7 @@
   pdf = {MMV2024ICLR.pdf},
   slides = {true},
   poster = {true},
-  preview = {dir_flow.gif},
+  preview = {MMV2024ICLR.gif},
   arxiv = {2307.12851},
   bibtex_show = {true},
   selected = {true}
@@ -206,7 +206,7 @@
   pdf = {MVM2023ICML.pdf},
   slides = {true},
   poster = {true},
-  preview = {lin_conv.png},
+  preview = {MVM2023ICML.png},
   bibtex_show = {true},
   selected = {true}
 }
@@ -219,13 +219,13 @@
   pages = {112184},
   year = {2025},
   abstract = {Network coherence generally refers to the emergence of simple aggregated dynamical behaviours, despite heterogeneity in the dynamics of the subsystems that constitute the network. In this paper, we develop a general frequency domain framework to analyze and quantify the level of network coherence that a system exhibits by relating coherence with a low-rank property of the system's input-output response. More precisely, for a networked system with linear dynamics and coupling, we show that, as the network's \emph{effective algebraic connectivity} grows, the system transfer matrix converges to a rank-one transfer matrix representing the coherent behavior. Interestingly, the non-zero eigenvalue of such a rank-one matrix is given by the harmonic mean of individual nodal dynamics, and we refer to it as the coherent dynamics. Our analysis unveils the frequency-dependent nature of coherence and a non-trivial interplay between dynamics and network topology. We further show that many networked systems can exhibit similar coherent behavior by establishing a concentration result in a setting with randomly chosen individual nodal dynamics.},
-  preview = {coherence.gif},
+  preview = {MPM2025AUT.gif},
   arxiv = {2302.08438},
-  pdf = {MPM2024Automatica.pdf},
+  pdf = {MPM2025AUT.pdf},
   bibtex_show = {true}
 }
 
-@InProceedings{xu2023aistat,
+@InProceedings{xmtmv2023aistats,
   title = {Linear Convergence of Gradient Descent For Finite Width Over-parametrized Linear Networks With General Initialization},
   author = {Xu, Ziqing and Min, Hancheng and Tarmoun, Salma and Mallada, Enrique and Vidal, Ren\'e},
   booktitle = {International Conference on Artificial Intelligence and Statistics ({AISTATS})},
@@ -237,7 +237,7 @@
   pdf = {XMTMV2023AISTATS.pdf},
   bibtex_show = {true},
   slides = {true},
-  preview = {loss_100.png}
+  preview = {XMTMV2023AISTATS.png}
 }
 
 @InProceedings{mm2023l4dc,
@@ -252,7 +252,7 @@
   pdf = {MM2023L4DC.pdf},
   bibtex_show = {true},
   poster = {true},
-  preview = {inter_area.gif},
+  preview = {MM2023L4DC.gif},
   arxiv = {2211.15301}
 }
 
@@ -267,7 +267,7 @@
   pdf = {MM2023ACC.pdf},
   bibtex_show = {true},
   slides = {true},
-  preview = {net_red_two.png},
+  preview = {MM2023ACC.png},
   arxiv = {2209.13701},
   doi = {10.23919/ACC55779.2023.10156212}
 }
@@ -285,14 +285,14 @@
   bibtex_show = {true},
   slides = {true},
   poster = {true},
-  preview = {lin_conv_two_layer.png}
+  preview = {MTVM2021ICML.png}
 }
 
-@unpublished{mm2021misc,
+@unpublished{mpm2021misc,
   title = {Coherence and Concentration in Tightly-Connected Networks},
   author = {Min, Hancheng and Pates, Richard and Mallada, Enrique},
   year = {2021},
-  pdf = {MPM2022TN.pdf},
+  pdf = {MPM2021MISC.pdf},
   arxiv = {2101.00981}
 }
 
@@ -308,7 +308,7 @@
   pdf = {MPM2021LCSS.pdf},
   bibtex_show = {true},
   slides = {true},
-  preview = {aggr_model.png},
+  preview = {MPM2021LCSS.png},
   arxiv = {1909.12864},
   doi = {10.1109/LCSYS.2020.3043733}
 }
@@ -324,7 +324,7 @@
   pdf = {MM2019CDC.pdf},
   bibtex_show = {true},
   slides = {true},
-  preview = {iceland_step_coherence.png},
+  preview = {MM2019CDC.png},
   arxiv = {1903.06017},
   doi = {10.1109/CDC40024.2019.9029796}
 }
@@ -354,7 +354,7 @@ year = {2023}
   bibtex_show = {true}
 }
 
-@article{cmbm2021tac,
+@article{cmbm2023tac,
   title = {Learning to Act Safely with Limited Exposure and Almost Sure Certainty},
   author = {Castellano, Agustin and Min, Hancheng and Bazerque, Juan and Mallada, Enrique},
   journal = {IEEE Transactions on Automatic Control ({TAC})},
@@ -365,7 +365,7 @@ year = {2023}
   abstract = {This paper aims to put forward the concept that learning to take safe actions in unknown environments, even with probability one guarantees, can be achieved without the need for an unbounded number of exploratory trials, provided that one is willing to navigate trade-offs between optimality, level of exposure to unsafe events, and the maximum detection time of unsafe actions. We illustrate this concept in two complementary settings. We first focus on the canonical multi-armed bandit problem and seek to study the intrinsic trade-offs of learning safety in the presence of uncertainty.  Under mild assumptions on sufficient exploration, we provide an algorithm that provably detects all unsafe machines in an (expected) finite number of rounds. The analysis also unveils a trade-off between the number of rounds needed to secure the environment and the probability of discarding safe machines.  We then consider the problem of finding optimal policies for a Markov Decision Process (MDP) with almost sure constraints. 
     We show that the (action) value function satisfies a barrier-based decomposition which allows for the identification of feasible policies independently of the reward process. Using this decomposition, we develop a Barrier-learning algorithm, that identifies such unsafe state-action pairs in a finite expected number of steps. Our analysis further highlights a trade-off between the time lag for the underlying MDP necessary to detect unsafe actions, and the level of exposure to unsafe events. Simulations corroborate our theoretical findings, further illustrating the aforementioned trade-offs, and suggesting that safety constraints can further speed up the learning process.},
   pdf = {CMBM2023TAC.pdf},
-  preview = {safe_rl.png},
+  preview = {CMBM2023TAC.png},
   bibtex_show = {true},
   doi = {10.1109/TAC.2023.3240925}
 }
@@ -381,7 +381,7 @@ year = {2023}
   abstract = {In this work we address the problem of finding feasible policies for Constrained Markov Decision Processes under probability one constraints. We argue that stationary policies are not sufficient for solving this problem, and that a rich class of policies can be found by endowing the controller with a scalar quantity, so called budget, that tracks how close the agent is to violating the constraint. We show that the minimal budget required to act safely can be obtained as the smallest fixed point of a Bellman-like operator, for which we analyze its convergence properties. We also show how to learn this quantity when the true kernel of the Markov decision process is not known, while providing sample-complexity bounds. The utility of knowing this minimal budget relies in that it can aid in the search of optimal or near-optimal policies by shrinking down the region of the state space the agent must navigate. Simulations illustrate the different nature of probability one constraints against the typically used constraints in expectation.},
   pdf = {CMBM2022L4DC.pdf},
   bibtex_show = {true},
-  preview = {safe_rl_l4dc.png}
+  preview = {CMBM2022L4DC.png}
 }
 @InProceedings{cmbm2023acssc,
   author={Castellano, Agustin and Min, Hancheng and Bazerque, Juan Andrés and Mallada, Enrique},
@@ -396,11 +396,11 @@ year = {2023}
   }
 
 
-@article{mtvm22prpt,
+@article{mtvm2023preprint,
   title = {Convergence and Implicit Bias of Gradient Flow on Overparametrized Linear Networks},
   author = {Min, Hancheng and Tarmoun, Salma and Vidal, Ren\'e and Mallada, Enrique},
   year = {2023},
-  pdf = {MTVM2022Preprint.pdf},
-  preview = {lin_conv_two_layer.png},
+  pdf = {MTVM2023Preprint.pdf},
+  preview = {MTVM2021ICML.png},
   arxiv = {2105.06351}
 }

@@ -19,7 +19,7 @@ horizontal: true
     <br>
     <!--Image container start-->
     <div class="project-image-container">
-        <img src="../assets/img/publication_preview/prelu.gif" alt="project thumbnail" class="project-thumbnail">
+        <img src="../assets/img/publication_preview/MV2024ICML.gif" alt="project thumbnail" class="project-thumbnail">
     </div>
     <!--Image container end-->
     <!--Text container start-->
@@ -82,7 +82,7 @@ horizontal: true
     <br>
     <!--Image container start-->
     <div class="project-image-container">
-        <img src="../assets/img/publication_preview/lin_conv_two_layer.png" alt="project thumbnail" class="project-thumbnail">
+        <img src="../assets/img/publication_preview/MTVM2021ICML.png" alt="project thumbnail" class="project-thumbnail">
     </div>
     <!--Image container end-->
     <!--Text container start-->
@@ -95,9 +95,9 @@ horizontal: true
         <u>Related work</u>
 
         <ul>
-          <li>{% bibliography -f papers --template project_cite -q @*[key=mtvm22prpt]* %}</li>
+          <li>{% bibliography -f papers --template project_cite -q @*[key=mtvm2023preprint]* %}</li>
           <li>{% bibliography -f papers --template project_cite -q @*[key=mvm2023icml]* %}</li>
-          <li>{% bibliography -f papers --template project_cite -q @*[key=xu2023aistat]* %}</li>
+          <li>{% bibliography -f papers --template project_cite -q @*[key=xmtmv2023aistats]* %}</li>
           <li>{% bibliography -f papers --template project_cite -q @*[key=mtvm2021icml]* %}</li>
         </ul>
 
@@ -156,7 +156,7 @@ horizontal: true
   <br>
     <!--Image container start-->
     <div class="project-image-container">
-        <img src="../assets/img/publication_preview/safe_rl.png" alt="project thumbnail" class="project-thumbnail">
+        <img src="../assets/img/publication_preview/CMBM2023TAC.png" alt="project thumbnail" class="project-thumbnail">
     </div>
     <!--Image container end-->
     <!--Text container start-->
@@ -171,7 +171,7 @@ horizontal: true
         <ul>
           <li>{% bibliography -f papers --template project_cite -q @*[key=cmbm2023acssc]* %}</li>
           <li>{% bibliography -f papers --template project_cite -q @*[key=cmbm2022l4dc]* %}</li>
-          <li>{% bibliography -f papers --template project_cite -q @*[key=cmbm2021tac]* %}</li>
+          <li>{% bibliography -f papers --template project_cite -q @*[key=cmbm2023tac]* %}</li>
         </ul>
 
 
