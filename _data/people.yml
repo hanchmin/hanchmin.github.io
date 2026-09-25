@@ -1,0 +1,9 @@
+# People data for the People page.
+#
+# PhD students render as photo cards (image, name, role, blurb, links).
+# Master's / undergrad students render as a compact text list (name + short info).
+# Alumni render as a text list with their current/next position.
+#
+# Photo path for PhD students is relative to assets/img/. Leave `image` blank to
+# fall back to the placeholder avatar at assets/img/people/placeholder.png.
+

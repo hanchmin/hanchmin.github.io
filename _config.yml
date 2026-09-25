@@ -200,6 +200,16 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - AGENTS.md
+  - CLAUDE.md
+  - Dockerfile
+  - docker-compose-slim.yml
+  - docker-compose.yml
+  - external-posts-disable.rb
+  - package-lock.json
+  - package.json
+  - purgecss.config.js
+  - _pages/dropdown.md
 keep_files:
   - CNAME
   - .nojekyll
