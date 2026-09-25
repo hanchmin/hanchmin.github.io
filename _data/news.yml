@@ -1,4 +1,8 @@
 items:
+  - date: 2026-09-25
+    content: >
+      Our paper "A margin perspective on LoRA: Robustness to catastrophic forgetting and adapter merging (MaLoRA)" is accepted to {NeurIPS 2026}!
+
   - date: 2026-06-18
     content: >
       Our paper "Dynamic World Generation Made Efficient" is accepted to {ECCV 2026}!
