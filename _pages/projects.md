@@ -11,6 +11,14 @@ horizontal: true
 
 <!-- pages/projects.md -->
 <div class="projects">
+  <p>
+    The tutorial paper
+    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=11561020"
+      >“On the Convergence, Implicit Bias and Edge of Stability of Gradient Descent in Deep Learning”</a
+    >
+    provides an introduction to most of the deep learning theory works I have worked on.
+  </p>
+
   <h2 class="category">Ongoing</h2>
   <details open>
   <summary>
@@ -75,7 +83,12 @@ horizontal: true
   <!--Text container end-->
   </details>
 
-  <details open>
+</div>
+
+<div class="projects">
+  <h2 class="category">Past</h2>
+
+  <details>
   <summary>
     <i>Convergence and Implicit Bias of Overparametrized Neural Networks</i>
   </summary>
@@ -107,12 +120,6 @@ horizontal: true
     </div>
   <!--Text container end-->
   </details>
-
-
-</div>
-
-<div class="projects">
-  <h2 class="category">Past</h2>
 
   <details>
   <summary>

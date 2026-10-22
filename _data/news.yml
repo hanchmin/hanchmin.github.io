@@ -1,7 +1,19 @@
 items:
+  - date: 2026-10-21
+    content: >
+      I will serve as an Area Chair for ICLR/AISTATS/ICML 2027.
+
+  - date: 2026-10-20
+    content: >
+      SJTU 2030 grant: Traing Dynamics of Generative Models from a Feature Learning Perspective
+
   - date: 2026-09-25
     content: >
       Our paper "A margin perspective on LoRA: Robustness to catastrophic forgetting and adapter merging (MaLoRA)" is accepted to {NeurIPS 2026}!
+
+  - date: 2026-08-29
+    content: >
+      NSFC grant: Convergence Analysis of Muon Optimizer from a Feature Learning Perspective
 
   - date: 2026-06-18
     content: >
@@ -9,7 +21,7 @@ items:
 
   - date: 2026-05-31
     content: >
-      I gave a talk "Slow Coherency, Aggregation and Clustering in Networked Systems" at Green Control Workshop 2026 at Peking University
+      I gave a talk "Slow Coherency, Aggregation and Clustering in Networked Systems" at Green Control Workshop 2026 at Peking University.
 
   - date: 2026-05-01
     content: >
@@ -19,13 +31,17 @@ items:
     content: >
       Our tutorial paper "On the Convergence, Implicit Bias and Edge of Stability of Gradient Descent in Deep Learning" has been accepted to {IEEE Signal Processing Magazine}!
 
+  - date: 2025-12-17
+    content: >
+      Science and Technology Commission of Shanghai Municipality grant: Theory of Neural Collapse in Deep Neural Networks
+
   - date: 2025-12-10
     content: >
-      I gave a talk "Understanding Incremental Learning with Closed-form Solution to Gradient Flow on Overparamerterized Matrix Factorization" at CDC 2025 at Rio
+      I gave a talk "Understanding Incremental Learning with Closed-form Solution to Gradient Flow on Overparamerterized Matrix Factorization" at CDC 2025 at Rio.
 
   - date: 2025-11-23
     content: >
-      I gave a talk "Learning Dynamics in the Feature Learning Regime: Implicit Bias, Neural Collapse, and Robustness" at NYU, Shanghai
+      I gave a talk "Learning Dynamics in the Feature Learning Regime: Implicit Bias, Neural Collapse, and Robustness" at NYU, Shanghai.
 
   - date: 2025-09-18
     content: >
@@ -33,7 +49,7 @@ items:
 
   - date: 2025-09-09
     content: >
-      I will serve as an Area Chair for ICLR 2026 and AISTATS 2026
+      I will serve as an Area Chair for ICLR 2026 and AISTATS 2026.
 
   - date: 2025-08-29
     content: >

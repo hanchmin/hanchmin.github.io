@@ -13,8 +13,10 @@
     title = {Dynamic World Generation Made Efficient},
     booktitle = {European Conference on Computer Vision ({ECCV})},
     year = {2026},
+    abstract={Generating large dynamic 3D worlds is important for applications such as virtual reality, simulation, and robotics. However, the lack of large-scale 3D dynamic training data prevents training world-scale 3D generative models directly. Recent progress in video generation provides powerful priors for generating 3D dynamic visual content. As a result, current approaches typically generate videos from multiple camera views using image or video diffusion models and fuse them into a 3D representation. However, these models generate each view independently, making it difficult to maintain motion consistency across viewpoints. Existing solutions address this problem by sequentially generating each view while updating an explicit 3D representation, which introduces a significant computational bottleneck. In this work we propose DynWorld, a framework that enables parallel generation of motion-consistent videos across multiple views. Our key insight is that the latent tokens of transformer-based video generators implicitly encode spatial and dynamic information that can be geometrically related across cameras. We thus introduce a Spatial Token Memory that stores latent video tokens along with their estimated 3D positions. During generation, tokens from one view are back-projected into 3D and re-projected into other views, allowing multiple video generators to share consistent motion context through attention. This mechanism enforces cross-view motion consistency while allowing all views to be generated simultaneously. Experiments show that our method produces large, diverse, view-consistent dynamic worlds while reducing generation time by an order of magnitude compared to sequential pipelines.},
+    pdf = {https://link.springer.com/chapter/10.1007/978-3-032-37261-1_2},
     month = {9},
-    note = {to appear}
+    bibtex_show = {true}
 }
 
 @InProceedings{lmv2026icml,
@@ -109,7 +111,6 @@
   pages = {1--8},
   year = {2025},
   abstract = {Deep learning-based classifiers are known to be vulnerable to adversarial attacks. Existing methods for defending against such attacks require adding a defense mechanism or modifying the learning procedure (e.g., by adding adversarial examples). This paper shows that for certain data distributions one can learn a provably robust classifier using standard learning methods and without adding a defense mechanism. More specifically, this paper addresses the problem of finding a robust classifier for a binary classification problem in which the data comes from an isotropic mixture of Gaussians with orthonormal cluster centers. First, we characterize the largest $\ell_2$-attack any classifier can defend against while maintaining high accuracy, and show the existence of optimal robust classifiers achieving this maximum $\ell_2$-robustness. Next, we show that given data sampled from the orthonormal Gaussian mixture model, gradient flow on a two-layer network with a polynomial ReLU activation and without adversarial examples provably finds an optimal robust classifier.},
-  recent={true},
   pdf = {MV2025ICML.pdf},
   poster={true},
   preview={MV2025ICML.png},
