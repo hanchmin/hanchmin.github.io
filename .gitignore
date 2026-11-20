@@ -13,3 +13,10 @@ Gemfile.lock
 assets/libs/
 node_modules/
 vendor
+
+# Local agent guidance and settings
+AGENTS.md
+CLAUDE.md
+.claude/
+.codex/
+.mcp.json
